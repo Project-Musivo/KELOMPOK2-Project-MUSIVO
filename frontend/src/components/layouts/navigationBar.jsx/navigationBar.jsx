@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const NavigationBar = () => {
+  const [bellImg, setBellImg] = useState("./assets/icon/bell2.png");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBellImg((prevImg) =>
+        prevImg === "./assets/icon/bell2.png"
+          ? "./assets/icon/bell1.png"
+          : "./assets/icon/bell2.png"
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   const seacrhStyle = {
     backgroundImage: "url('./assets/icon/search-Icon.png')",
     backgroundRepeat: "no-repeat",
@@ -9,40 +22,84 @@ const NavigationBar = () => {
     paddingLeft: "35px",
   };
 
-  const styleSelect = {
-    textAlignLast: "center",
-  };
-
   return (
     <nav
-      className="bg-[#1B1A1B] py-3"
+      className="border-gray-200 ms-[70px] bg-[#1B1A1B] "
       style={{ boxShadow: "0px 2px 2px rgba(255, 255, 255, 0.25)" }}
     >
-      <div className="container ps-[150px] pe-[4%]  flex justify-between items-center">
-        <div className="searchBar">
-          <input
-            type="search"
-            name="searchbar"
-            placeholder="Search Top 5 Global"
-            className="py-[5px] px-[130px] rounded-md"
-            style={seacrhStyle}
-          />
-        </div>
-        <div className="user flex items-center justify-end me-[-20px]">
-          <img src="./assets/profileUser.png" alt="" className="w-[40px]" />
-          <div className="username border-e-2 ps-2 pe-2 me-4">
-            <span className="text-white">Nanaa</span>
-            <select
-              name=""
-              id=""
-              className="rounded-full p-[2px] mx-3 px-[3px]"
-              style={styleSelect}
-            >
-              <option value="" disabled></option>
-            </select>
+      <div className="max-w-screen-xl flex items-center justify-between p-4">
+        <input
+          type="search"
+          name="search"
+          style={seacrhStyle}
+          placeholder="Search top 5 global"
+          className="py-[5px] px-[130px] rounded-md ms-[45px]"
+        />
+        <div className="flex items-center md:order-2">
+          <button
+            type="button"
+            className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+            id="user-menu-button"
+            aria-expanded="false"
+            data-dropdown-toggle="user-dropdown"
+            data-dropdown-placement="bottom"
+          >
+            <span className="sr-only">Open user menu</span>
+            <img
+              className="w-8 h-8 rounded-full"
+              src="./assets/profileUser.png"
+              alt="user photo"
+            />
+          </button>
+          <span className="ms-2 border-e-2 pe-5">Nanaa</span>
+          <img src={bellImg} alt="" className="mx-3 w-[18px]" />
+          <div
+            className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+            id="user-dropdown"
+          >
+            <div className="px-4 py-3">
+              <span className="block text-sm text-gray-900 dark:text-white">
+                Nanaa
+              </span>
+              <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">
+                nanaa123@gmail.com
+              </span>
+            </div>
+            <ul className="py-2" aria-labelledby="user-menu-button">
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >
+                  Settings
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >
+                  Earnings
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >
+                  Sign out
+                </a>
+              </li>
+            </ul>
           </div>
-
-          <img src="./assets/icon/bell2.png" alt="" className="w-[20px]" />
         </div>
       </div>
     </nav>
