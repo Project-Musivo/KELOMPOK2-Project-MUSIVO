@@ -13,7 +13,6 @@ const Sidebar = () => {
     { title: "Logout", src: "logout", gap: true},
   ];
 
-  
   return (
     <div className="flex">
       <div
