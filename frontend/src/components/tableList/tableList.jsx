@@ -1,4 +1,5 @@
 import React from "react";
+import { dataMusic } from "../../data/music";
 
 const TableList = () => {
     return(
@@ -13,26 +14,16 @@ const TableList = () => {
                 <th className="px-4 py-3 text-center">TIME</th>
               </tr>
             </thead>
+              {dataMusic.map((dataMusic) => (
             <tbody className="bg-transparent">
-              <tr className="text-[15px]  tracking-wide text-white border-0 bg-transparent">
-                <td className="px-4 py-3 text-center">#1</td>
-                <td className="px-4 py-3 text-center">Variasi Pink</td>
-                <td className="px-4 py-3 text-center">Jason Ranti</td>
-                <td className="px-4 py-3 text-center">04.56</td>
-              </tr>
-              <tr className="text-[15px]  tracking-wide text-white border-0 bg-transparent">
-                <td className="px-4 py-3 text-center">#2</td>
-                <td className="px-4 py-3 text-center">Not You</td>
-                <td className="px-4 py-3 text-center">Alan Walker ft emma steinbakken</td>
-                <td className="px-4 py-3 text-center">03.12</td>
-              </tr>
-              <tr className="text-[15px]  tracking-wide text-white border-0 bg-transparent">
-                <td className="px-4 py-3 text-center ">#3</td>
-                <td className="px-4 py-3 text-center">Diamonds</td>
-                <td className="px-4 py-3 text-center">Rihanna</td>
-                <td className="px-4 py-3 text-center">04.10</td>
+                <tr className="text-[15px]  tracking-wide text-white border-0 bg-transparent">
+                <td className="px-4 py-3 text-center" >{dataMusic.id}</td>
+                <td className="px-4 py-3 text-center">{dataMusic.title}</td>
+                <td className="px-4 py-3 text-center">{dataMusic.artis}</td>
+                <td className="px-4 py-3 text-center">{dataMusic.time}</td>
               </tr>
             </tbody>
+                ))}
           </table>
         </div>
       </div>
