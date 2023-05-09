@@ -2,9 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 
 import Login from "./pages/LogReg/register";
-
-import Favorit from "../src/components/layouts/favorit/favorit";
-
+import Favorit from "./components/favorit/favorit";
 
 function App() {
   return (
@@ -15,7 +13,6 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/favorit" element={<Favorit />} />
-
       </Routes>
     </BrowserRouter>
   );
