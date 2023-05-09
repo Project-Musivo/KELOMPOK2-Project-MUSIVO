@@ -6,8 +6,9 @@ const favorit = () => {
     return (
         <div className="flex">
             <Sidebar/>
-            <div>
-                <NavigationBar />
+            <div className="w-full">
+                <NavigationBar/>
+                
             </div>
         </div>
     );

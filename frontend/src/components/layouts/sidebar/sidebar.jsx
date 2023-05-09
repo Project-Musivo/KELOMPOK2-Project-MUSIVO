@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../../../assets/logo.png";
+// import Logo from "../../../assets/logo.png";
 // import Logo from "../../../../public/logo.png";
 
 const Sidebar = () => {
@@ -25,13 +25,13 @@ const Sidebar = () => {
       >
         <img
           src="./assets/icon/control.png"
-          className={`absolute cursor-pointer -right-3 top-[100px] w-7 border-dark-purple
+          className={`absolute cursor-pointer -right-3 top-[70px] w-7 border-dark-purple
            border-2 rounded-full ${!open && "rotate-180"} w-[35px]`}
           onClick={() => setOpen(!open)}
         />
         <div className="flex gap-x-3 items-center ">
           <img
-            src="./assets/logo.png"
+            src={"./assets/logo.png"}
             className={`w-[70px] cursor-pointer duration-500 ${
               open && "rotate-[360deg]"
             }`}
@@ -45,7 +45,7 @@ const Sidebar = () => {
             Musivo
           </h1>
         </div>
-        <ul className="pt-[70px]">
+        <ul className='pt-[20px]'>
           {Menus.map((Menu, index) => (
             <li
               key={index}
@@ -60,7 +60,7 @@ const Sidebar = () => {
               <span className={`${!open && "hidden"} origin-left duration-200`}>
                 {Menu.title}
               </span>
-            </li>
+            </li> 
           ))}
         </ul>
       </div>
