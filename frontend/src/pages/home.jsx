@@ -1,9 +1,14 @@
 import React from "react";
 import NavigationBar from "../components/layouts/navigationBar.jsx/navigationBar";
+import Sidebar from "../components/layouts/sidebar/sidebar";
 import Genre from "../components/genreMusic/genre";
 import MostlyPlayed from "../components/mostly played/mostPlay";
+
 import Sidebar from "../components/layouts/sidebar/sidebar";
 import TopPlaylist from "../components/top playlist/topPlay";
+
+
+
 
 const Home = () => {
   return (

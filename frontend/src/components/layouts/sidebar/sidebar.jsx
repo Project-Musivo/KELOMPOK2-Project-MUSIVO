@@ -1,7 +1,18 @@
 import { useState } from "react";
 
+
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
+
+import Logo from "../../../assets/logo.png";
+// import Logo from "../../../../public/logo.png";
+
+const Sidebar = () => {
+  const [open, setOpen] = useState(true);
+  const [selectedMenu, setSelectedMenu] = useState(null);
+
+  
+
   const Menus = [
     { title: "Home", src: "home" },
     { title: "Playlist", src: "playlist" },
@@ -49,7 +60,9 @@ const Sidebar = () => {
               className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
               ${Menu.gap ? "mt-9" : "mt-3"} ${
                 index === 0 && "bg-light-white"
-              } `}
+              }
+              ${open && `hover:text-slate-100 hover:bg-gray-500`}
+              `}
             >
               <img src={`./assets/icon/${Menu.src}.png`} />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
