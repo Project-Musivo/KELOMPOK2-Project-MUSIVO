@@ -25,7 +25,7 @@ const Home = () => {
               </h2>
               <MostlyPlayed />
             </div>
-            <div className="topPlay">
+            <div className="topPlay ms-3">
               <h2 className="text-[25px] mt-[30px] mb-3 font-semibold ms-3">
                 Top Playlist
               </h2>
