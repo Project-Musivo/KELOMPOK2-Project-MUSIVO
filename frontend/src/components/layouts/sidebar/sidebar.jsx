@@ -3,12 +3,10 @@ import Logo from "../../../assets/logo.png";
 // import Logo from "../../../../public/logo.png";
 
 const Sidebar = () => {
-  // const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(true);
   const [selectedMenu, setSelectedMenu] = useState(null);
 
-  // const handleMenuClick = (index) => {
-  //   setSelectedMenu(index);
-  // };
+  
   const Menus = [
     { title: "Home", src: "home" },
     { title: "Playlist", src: "playlist" },
@@ -57,7 +55,6 @@ const Sidebar = () => {
               }
               ${open && `hover:text-slate-100 hover:bg-gray-500`}
               `}
-              // onClick={() => handleMenuClick(index)}
             >
               <img src={`./src/assets/${Menu.src}.png`} />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
