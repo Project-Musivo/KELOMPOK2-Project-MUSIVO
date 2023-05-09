@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Logo from "../../../assets/logo.png";
+// import Logo from "../../../assets/logo.png";
+import Logo from "../../../../public/logo.png";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
   const Menus = [
-    { title: "Home", src: "home" },
+    { title: "Home", src: "home",path: "/" },
     { title: "Playlist", src: "playlist" },
     { title: "Artisc ", src: "user" },
     { title: "Favorit", src: "favorit" },
