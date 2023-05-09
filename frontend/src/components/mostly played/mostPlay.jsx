@@ -40,7 +40,7 @@ const MostlyPlayed = () => {
   }
 
   return (
-    <div className="mostlyplayed flex justify-start gap-3 flex-wrap w-[60%]">
+    <div className="mostlyplayed flex justify-start gap-3 flex-wrap w-100 h-45 ">
       {boxes}
     </div>
   );
