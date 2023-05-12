@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import Favorit from "../src/components/layouts/favorit/favorit";
+import Favorit from "./pages/favorit";
 import Login from "./pages/LogReg/register";
 
 function App() {
