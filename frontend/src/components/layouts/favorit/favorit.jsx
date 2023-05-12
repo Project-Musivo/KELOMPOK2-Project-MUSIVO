@@ -1,6 +1,6 @@
 import { useState } from "react";
-import NavigationBar from "../navigationBar.jsx/navigationBar";
-import Sidebar from "../sidebar/sidebar";
+import NavigationBar from "../layouts/navigationBar.jsx/navigationBar";
+import Sidebar from "../layouts/sidebar/sidebar";
 
 const favorit = () => {
     return (
@@ -8,6 +8,7 @@ const favorit = () => {
             <Sidebar/>
             <div>
                 <NavigationBar />
+
             </div>
         </div>
     );
