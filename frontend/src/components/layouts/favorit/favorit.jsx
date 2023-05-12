@@ -1,13 +1,13 @@
 import { useState } from "react";
-import NavigationBar from "../navigationBar.jsx/navigationBar";
-import Sidebar from "../sidebar/sidebar";
+import NavigationBar from "../layouts/navigationBar.jsx/navigationBar";
+import Sidebar from "../layouts/sidebar/sidebar";
 
 const favorit = () => {
     return (
         <div className="flex">
             <Sidebar/>
-            <div className="w-full">
-                <NavigationBar/>
+            <div>
+                <NavigationBar />
 
             </div>
         </div>
