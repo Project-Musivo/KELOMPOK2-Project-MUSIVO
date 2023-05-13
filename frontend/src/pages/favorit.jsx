@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NavigationBar from "../components/layouts/navigationBar.jsx/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
-import Header from "../components/layouts/headermusic/header";
+// import Header from "../components/layouts/headermusic/header";
 
 const Favorit = () => {
     return (
@@ -9,7 +9,7 @@ const Favorit = () => {
             <Sidebar />
             <div className="w-full">
                 <NavigationBar/>
-                <Header />
+                {/* <Header /> */}
             </div>
         </div>
     );
