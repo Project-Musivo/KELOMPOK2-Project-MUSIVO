@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavigationBar from "../components/layouts/navigationBar.jsx/navigationBar";
+import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
 import TableList from "../components/tableList/tableList";
 

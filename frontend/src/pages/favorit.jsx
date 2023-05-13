@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import Sidebar from "../components/layouts/sidebar/sidebar";
-import NavigationBar from "../components/layouts/navigationBar.jsx/navigationBar";
+import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 
 const Favorit = () => {
   return (

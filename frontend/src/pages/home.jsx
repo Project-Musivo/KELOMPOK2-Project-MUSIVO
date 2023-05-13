@@ -1,10 +1,9 @@
 import React from "react";
-import NavigationBar from "../components/layouts/navigationBar.jsx/navigationBar";
+import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
 import Genre from "../components/genreMusic/genre";
 import MostlyPlayed from "../components/mostly played/mostPlay";
 import TopPlaylist from "../components/top playlist/topPlay";
-
 
 const Home = () => {
   return (
@@ -26,7 +25,7 @@ const Home = () => {
               </h2>
               <MostlyPlayed />
             </div>
-            <div className="topPlay ms-3">
+            <div className="topPlay ms-7">
               <h2 className="text-[25px] mt-[30px] mb-3 font-semibold ms-3">
                 Top Playlist
               </h2>

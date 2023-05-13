@@ -33,13 +33,13 @@ const NavigationBar = () => {
           name="search"
           style={seacrhStyle}
           placeholder="Search top 5 global"
-          className="py-[5px] px-[130px] rounded-md ms-[45px]"
+          className="py-[5px] w-[350px] rounded-md ms-[45px]"
         />
         <div className="flex items-center md:order-2">
           <button
             type="button"
             className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
-            id="user-menu-button" 
+            id="user-menu-button"
             aria-expanded="false"
             data-dropdown-toggle="user-dropdown"
             data-dropdown-placement="bottom"
@@ -52,7 +52,12 @@ const NavigationBar = () => {
             />
           </button>
           <span className="ms-2 border-e-2 pe-5">Nanaa</span>
-          <img src={bellImg} alt="" className="mx-3 w-[18px]" />
+          <img
+            src={bellImg}
+            alt=""
+            className="mx-3 w-[18px] cursor-pointer"
+            onClick={() => alert("Notification here")}
+          />
           <div
             className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
             id="user-dropdown"
@@ -71,23 +76,7 @@ const NavigationBar = () => {
                   href="#"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                >
                   Settings
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                >
-                  Earnings
                 </a>
               </li>
               <li>
