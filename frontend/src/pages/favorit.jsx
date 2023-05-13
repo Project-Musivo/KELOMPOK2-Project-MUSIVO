@@ -10,6 +10,7 @@ const Favorit = () => {
             <div className="w-full">
                 <NavigationBar/>
                 {/* <Header /> */}
+                <h2>test</h2>
             </div>
         </div>
     );
