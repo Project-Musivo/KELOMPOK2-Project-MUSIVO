@@ -5,6 +5,7 @@ import Genre from "../components/genreMusic/genre";
 import MostlyPlayed from "../components/mostly played/mostPlay";
 import TopPlaylist from "../components/top playlist/topPlay";
 
+
 const Home = () => {
   return (
     <React.Fragment>

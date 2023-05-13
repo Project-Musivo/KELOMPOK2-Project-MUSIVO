@@ -2,13 +2,11 @@ import { useState } from "react";
 // import { Link, useLocation } from "react-router-dom";
 // import { Link, NavLink, useLocation } from "react-router-dom";
 
-// import Logo from "../../../assets/logo.png";
-// import Logo from "../../../../public/logo.png";
-
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
   // const [selectedMenu, setSelectedMenu] = useState(null);
   // const location = useLocation();
+  const [selectedMenu, setSelectedMenu] = useState(null);
   const Menus = [
     { title: "Home", src: "home", path: "/" },
     { title: "Playlist", src: "playlist", path: "/playlist" },
