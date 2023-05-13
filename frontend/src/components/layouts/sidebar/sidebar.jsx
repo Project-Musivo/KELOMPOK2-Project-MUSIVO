@@ -1,26 +1,20 @@
 import { useState } from "react";
-
-
-const Sidebar = () => {
-  const [open, setOpen] = useState(false);
-
-import Logo from "../../../assets/logo.png";
-// import Logo from "../../../../public/logo.png";
+// import { Link, useLocation } from "react-router-dom";
+// import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
+  // const [selectedMenu, setSelectedMenu] = useState(null);
+  // const location = useLocation();
   const [selectedMenu, setSelectedMenu] = useState(null);
-
-  
-
   const Menus = [
-    { title: "Home", src: "home" },
-    { title: "Playlist", src: "playlist" },
-    { title: "Artisc ", src: "user" },
-    { title: "Favorit", src: "favorit" },
-    { title: "Leaderboard", src: "trophy" },
-    { title: "Settings ", src: "setting" },
-    { title: "Logout", src: "logout", gap: true },
+    { title: "Home", src: "home", path: "/" },
+    { title: "Playlist", src: "playlist", path: "/playlist" },
+    { title: "Artisc ", src: "user", path: "/artisc" },
+    { title: "Favorit", src: "favorit", path: "/favorit" },
+    { title: "Leaderboard", src: "trophy", path: "/leaderboard" },
+    { title: "Settings ", src: "setting", path: "/settings" },
+    // { title: "Logout", src: "logout", gap: true },
   ];
 
   return (
@@ -33,13 +27,13 @@ const Sidebar = () => {
       >
         <img
           src="./assets/icon/control.png"
-          className={`absolute cursor-pointer -right-3 top-[100px] w-7 border-dark-purple
+          className={`absolute cursor-pointer -right-3 top-[70px] w-7 border-dark-purple
            border-2 rounded-full ${!open && "rotate-180"} w-[35px]`}
           onClick={() => setOpen(!open)}
         />
         <div className="flex gap-x-3 items-center ">
           <img
-            src="./assets/logo.png"
+            src={"./assets/logo.png"}
             className={`w-[70px] cursor-pointer duration-500 ${
               open && "rotate-[360deg]"
             }`}
@@ -53,7 +47,7 @@ const Sidebar = () => {
             Musivo
           </h1>
         </div>
-        <ul className="pt-[70px]">
+        <ul className='pt-[20px]'>
           {Menus.map((Menu, index) => (
             <li
               key={index}
@@ -64,11 +58,35 @@ const Sidebar = () => {
               ${open && `hover:text-slate-100 hover:bg-gray-500`}
               `}
             >
-              <img src={`./assets/icon/${Menu.src}.png`} />
-              <span className={`${!open && "hidden"} origin-left duration-200`}>
-                {Menu.title}
-              </span>
-            </li>
+              {/* <Link to={menu.path}>
+                <img src={`./assets/icon/${menu.src}.png`} alt={menu.title} />
+                <span
+                  className={`${!open && "hidden"} origin-left duration-200`}
+                >
+                  {menu.title}
+                </span>
+              </Link> */}
+              
+              {/* <NavLink
+                exact
+                to={Menu.link}
+                activeClassName="bg-gray-500 text-slate-100"
+                className={`${open && "origin-left duration-200"} ${
+                  !open && "hidden"
+                }`}
+              >
+                <img src={`./assets/icon/${Menu.src}.png`} />
+                <span className="ml-2">{Menu.title}</span>
+              </NavLink> */}
+
+              {/* <Link to={`/${Menu.src}`}> */}
+                <img src={`./assets/icon/${Menu.src}.png`} />
+                <span className={`${!open && "hidden"} origin-left duration-200`}>
+                  {Menu.title}
+                </span>
+              {/* </Link> */}
+            </li> 
+
           ))}
         </ul>
       </div>
