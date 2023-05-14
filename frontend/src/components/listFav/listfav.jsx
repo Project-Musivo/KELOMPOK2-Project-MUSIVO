@@ -3,7 +3,7 @@ import { dataFavorit } from "../../data/music";
 
 const Listfav = () => {
     return(
-        <div className="bg-transparent-black w-full overflow-hidden rounded-lg shadow-xs">
+        <div className="bg-transparent-black w-full pt-[30px] overflow-hidden shadow-xs">
         <div className="w-full overflow-x-auto">
           <table className="w-full whitespace-no-wrap">
             <thead>
