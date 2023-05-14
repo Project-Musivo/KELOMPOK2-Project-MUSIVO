@@ -23,7 +23,7 @@ const MostlyPlayed = () => {
         />
         <div className="title" style={{ marginLeft: "-10px" }}>
           <h3>Anggurman</h3>
-          <p className="text-[15px] opacity-50">Jason Renti</p>
+          <p className="text-[15px] opacity-50">Jason Ranti</p>
         </div>
 
         <img
@@ -40,7 +40,7 @@ const MostlyPlayed = () => {
   }
 
   return (
-    <div className="mostlyplayed flex justify-start gap-3 flex-wrap w-[60%]">
+    <div className="mostlyplayed flex justify-start gap-3 flex-wrap w-100 h-45 ">
       {boxes}
     </div>
   );
