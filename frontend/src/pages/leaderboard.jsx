@@ -3,7 +3,7 @@ import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
 import Listfav from "../components/listFav/listfav";
 import TableList from "../components/tableList/tableList";
-import { dataTopanime10, dataTopglobal50, dataTopWest70 } from "../../data/music";
+// import { dataTopanime10, dataTopglobal50, dataTopWest70 } from "../../data/music";
 
 import { 
   Card, 
