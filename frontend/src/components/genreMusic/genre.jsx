@@ -18,9 +18,6 @@ const Genre = () => {
       <Swiper
         slidesPerView={3}
         spaceBetween={40}
-        pagination={{
-          clickable: true,
-        }}
         // modules={[Pagination]}
         className="mySwiper"
       >
