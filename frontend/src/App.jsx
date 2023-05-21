@@ -4,15 +4,21 @@ import Favorit from "./pages/favorit";
 import Playlist from "./pages/playlist";
 import Login from "./pages/LogReg/register";
 
-
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/favorit" element={<Favorit />} />
          <Route path="/playlist" element={<Playlist />} />
+
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/favorit" element={<Favorit />} />
+        <Route path="/playlist" element={<Playlist />} />
+
       </Routes>
     </BrowserRouter>
   );
