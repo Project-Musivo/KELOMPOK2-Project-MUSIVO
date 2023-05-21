@@ -1,5 +1,5 @@
 import React from "react";
-import { dataMusic } from "../../data/music";
+import { dataPlaylist } from "../../data/music";
 
 const TableList = () => {
     return(
@@ -14,13 +14,13 @@ const TableList = () => {
                 <th className="px-4 py-3 text-center">TIME</th>
               </tr>
             </thead>
-              {dataMusic.map((dataMusic) => (
+              {dataPlaylist.map((dataPlaylist) => (
             <tbody className="bg-transparent">
                 <tr className="text-[15px]  tracking-wide text-white border-0 bg-transparent">
-                <td className="px-4 py-3 text-center" >{dataMusic.id}</td>
-                <td className="px-4 py-3 text-center">{dataMusic.title}</td>
-                <td className="px-4 py-3 text-center">{dataMusic.artis}</td>
-                <td className="px-4 py-3 text-center">{dataMusic.time}</td>
+                <td className="px-4 py-3 text-center" >{dataPlaylist.id}</td>
+                <td className="px-4 py-3 text-center">{dataPlaylist.title}</td>
+                <td className="px-4 py-3 text-center">{dataPlaylist.artis}</td>
+                <td className="px-4 py-3 text-center">{dataPlaylist.time}</td>
               </tr>
             </tbody>
                 ))}
