@@ -15,15 +15,11 @@ const ContentSwiper = (props) => {
     padding: "10px",
   };
 
-  const handleClick = () => {
-    console.log("Masih dalam tahap pengembangan");
-  };
-
   return (
     <div
       className="content-swiper cursor-pointer"
       style={styleContent}
-      onClick={handleClick}
+      onClick={() => alert("Masih dalam tahap pengembangan")}
     >
       <div className="genreName" style={styleGenre}>
         <p className="text-[26px] font-semibold ">{props.genre}</p>
