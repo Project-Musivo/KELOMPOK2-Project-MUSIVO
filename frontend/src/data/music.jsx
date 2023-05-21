@@ -92,4 +92,39 @@ const dataTopPlay = [
     rate: "4.5",
   },
 ];
-export { dataMusic, dataMostPlay, dataTopPlay };
+
+const dataFavorit = [
+  {
+    id: 1,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 2,
+    image: "",
+    title: "Diamonds",
+    artis: "Rihanna",
+    date: "-",
+    time: "4.26",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "Night Dancer",
+    artis: "Imase",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 4,
+    image: "",
+    title: "Night Changes",
+    artis: "One Direction",
+    date: "-",
+    time: "3.26",
+  },
+];
+export { dataMusic, dataMostPlay, dataTopPlay, dataFavorit };

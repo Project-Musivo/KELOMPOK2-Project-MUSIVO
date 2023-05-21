@@ -24,7 +24,7 @@ const NavigationBar = () => {
 
   return (
     <nav
-      className="border-gray-200 ms-[70px] bg-[#1B1A1B] "
+      className="border-gray-200 ms-[80px] bg-[#1B1A1B] fixed w-full pe-20 top-0 z-50"
       style={{ boxShadow: "0px 2px 2px rgba(255, 255, 255, 0.25)" }}
     >
       <div className="max-w-screen-xl flex items-center justify-between p-4">

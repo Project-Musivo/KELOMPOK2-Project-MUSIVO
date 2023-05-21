@@ -16,7 +16,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="flex fixed" style={{ zIndex: "2" }}>
+    <div className="flex fixed top-0" style={{ zIndex: "2" }}>
       <div
         className={` ${
           open ? "w-72" : "w-20"
