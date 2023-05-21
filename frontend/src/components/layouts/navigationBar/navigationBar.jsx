@@ -51,7 +51,7 @@ const NavigationBar = () => {
               alt="user photo"
             />
           </button>
-          <span className="ms-2 border-e-2 pe-5">Nanaa</span>
+          <span className=" border-e-2 pe-5">Nanaa</span>
           <img
             src={bellImg}
             alt=""
