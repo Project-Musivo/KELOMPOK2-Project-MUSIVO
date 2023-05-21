@@ -28,34 +28,7 @@ const Playlist = () => {
             </div>
             </div>
 
-              <img
-                src="./assets/album music/collide.jpg"
-                className="w-[225px] rounded-lg"
-              />
-              <div className="flex flex-col mt-[80px] mx-10">
-                <h1 className="text-[28px] font-bold ">Morning Vibes</h1>
-                <p className="text-[12px]">
-                  <span className="font-bold">Nanaa</span>, 4 Playlist , 6 Mei
-                  2023
-                </p>
-                <div className="flex">
-                  <img
-                    src={
-                      isToogle
-                        ? "./assets/icon/paused.png"
-                        : "./assets/icon/play.png"
-                    }
-                    onClick={toogleClick}
-                    alt=""
-                    className="cursor-pointer w-[50px]  mt-[25px]"
-                  />
-                  <img
-                    src="./assets/icon/detail-white.png"
-                    alt=""
-                    className="cursor-pointer w-[35px] h-[10px] mx-8 mt-[44px]"
-                  />
-                </div>
-              </div>
+             
 
             </div>
             <div className="">
