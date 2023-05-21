@@ -3,7 +3,7 @@ import { dataFavorit } from "../../data/music";
 
 const Listfav = () => {
     return(
-        <div className="bg-transparent-black w-full pt-[30px] overflow-hidden shadow-xs">
+        <div className=" w-full  overflow-hidden shadow-xs">
         <div className="w-full overflow-x-auto">
           <table className="w-full whitespace-no-wrap">
             <thead>
@@ -14,7 +14,7 @@ const Listfav = () => {
                 <th className="pl-2 py-3 text-left">TITLE</th>
                 <th className="py-3 text-left">ARTIST</th>
                 
-                <th className="py-3 text-left">DATE</th>
+                <th className="py-3 text-left">DATE ADD</th>
                 <th className="py-3">TIME</th>
               </tr>
             </thead>
@@ -25,7 +25,7 @@ const Listfav = () => {
                 <td className="py-3 text-right">{dataFavorit.image}</td>
                 <td className="px-2 py-3 text-left">{dataFavorit.title}</td>
                 <td className="pl-2 py-3 text-left">{dataFavorit.artis}</td>
-                <td className="py-3 text-left">{dataFavorit.date}</td>
+                <td className="pl-10 py-3 text-left">{dataFavorit.date}</td>
                 <td className="py-3 text-center">{dataFavorit.time}</td>
               </tr>
             </tbody>
