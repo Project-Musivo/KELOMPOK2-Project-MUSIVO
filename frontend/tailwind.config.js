@@ -6,8 +6,12 @@ export default {
   ],
   theme: {
     extend: {},
+
+    '2xl': {'max': '1535px'},
+
     screens: {
       '2xl': {'max': '1535px'},
+
       // => @media (max-width: 1535px) { ... }
 
       'xl': {'max': '1279px'},
@@ -21,10 +25,13 @@ export default {
 
       'sm': {'max': '576px'},
       // => @media (max-width: 576px) { ... }
+
+
     },
     colors:{
       'transparent-black' : 'rgba(25, 25, 25, 0.297)',
     }
+
 
   },
   plugins: [],
