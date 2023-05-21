@@ -7,14 +7,13 @@ export default function Login() {
 
   function handleLogin(event) {
     event.preventDefault();
-    console.log("Email",email);
-    console.log("Password",password);
+    console.log("Email", email);
+    console.log("Password", password);
   }
 
   return (
     <div
-      className="bg-no-repeat bg-center bg-cover w-screen h-screen filter-brightness-1"
-      style={{ backgroundImage: "url(./assets/background/bg.png)" }}
+      className="bg-no-repeat bg-center bg-cover w-screen h-screen filter-brightness-1 bg-image md:bg-image-md"
     >
       <div className="container py-5 px-4 sm:px-28" style={{ zIndex: "11px" }}>
         <section className="flex items-center justify-center sm:justify-start">
@@ -23,9 +22,9 @@ export default function Login() {
             MUSIVO{" "}
             <span>
               <p className="text-sm">Let’s Play The Music</p>
-            </span>
+            </span>{" "}
           </p>
-        </section>  
+        </section>
         <section>
           <div className="flex items-center">
             <div className="max-w-md w-full space-y-8">
