@@ -11,7 +11,7 @@ const Home = () => {
       <Sidebar />
       <div>
         <NavigationBar />
-        <div className="home ps-[100px]">
+        <div className="home ps-[100px] mt-[100px]">
           <div className="ms-[30px]">
             <div className="ucapan mt-[40px]">
               <h3 className="text-[28px] font-semibold">Good Morning, Nanaa</h3>
