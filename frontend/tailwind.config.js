@@ -28,6 +28,7 @@ module.exports = withMT({
     colors: {
       'transparent-black': 'rgba(25, 25, 25, 0.297)',
       'card': 'rgb(34, 34, 34)',
+      '14': '#141414'
     }
   },
   plugins: [],

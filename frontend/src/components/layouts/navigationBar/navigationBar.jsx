@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Input } from "@material-tailwind/react";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 const NavigationBar = () => {
   const [bellImg, setBellImg] = useState("./assets/icon/bell2.png");
@@ -14,31 +16,23 @@ const NavigationBar = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const seacrhStyle = {
-    backgroundImage: "url('./assets/icon/search-Icon.png')",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "20px",
-    backgroundPosition: "10px center",
-    paddingLeft: "35px",
-  };
-
   return (
     <nav
       className="border-gray-200 ms-[80px] bg-[#1B1A1B] fixed w-full pe-20 top-0 z-40"
       style={{ boxShadow: "0px 2px 2px rgba(255, 255, 255, 0.25)" }}
     >
       <div className="max-w-screen-xl flex items-center justify-between p-4">
-        <input
-          type="search"
-          name="search"
-          style={seacrhStyle}
-          placeholder="Search top 5 global"
-          className="py-[5px] w-[350px] rounded-md ms-[45px]"
-        />
+        <div className="ms-7 w-1/2 md:w-72">
+          <Input
+            label="Search Top 5 Global"
+            className="text-white"
+            icon={<MagnifyingGlassIcon className="h-5 w-5" />}
+          />
+        </div>
         <div className="flex items-center md:order-2">
           <button
             type="button"
-            className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+            className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-2 focus:ring-blue-gray-200"
             id="user-menu-button"
             aria-expanded="false"
             data-dropdown-toggle="user-dropdown"
@@ -46,12 +40,12 @@ const NavigationBar = () => {
           >
             <span className="sr-only">Open user menu</span>
             <img
-              className="w-8 h-8 rounded-full"
+              className="w-9 h-9 rounded-full"
               src="./assets/profileUser.png"
               alt="user photo"
             />
           </button>
-          <span className=" border-e-2 pe-5">Nanaa</span>
+          <span className="border-e-2 pe-5">Nanaa</span>
           <img
             src={bellImg}
             alt=""
