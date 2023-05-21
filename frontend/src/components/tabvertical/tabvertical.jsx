@@ -2,7 +2,12 @@ import React, { useState } from "react";
 
 const Tabvertical = () => {
     return(
-        <div></div>
+        <div className="flex">
+            <div className="tab ">
+
+            </div>
+            <div className="content"></div>
+        </div>
     );
 };
 

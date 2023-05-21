@@ -5,6 +5,8 @@ import Playlist from "./pages/playlist";
 import Login from "./pages/LogReg/register";
 import Leaderboard from "./pages/leaderboard";
 
+
+
 function App() {
   return (
     <BrowserRouter>

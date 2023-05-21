@@ -17,12 +17,20 @@ export default function Login() {
         <div className="container py-16 px-28" style={{ zIndex: "2px" }}>
           <section className="flex items-center">
             <img className="w-[120px]" src="./assets/logo.png" alt="" />
+            <div>
             <p
               className="text-white text-[55px]"
               style={{ fontFamily: "Josefin sans,sans-serif" }}
             >
               Musivo
             </p>
+            <p
+              className="text-white text-[20px] -mt-[20px]"
+              style={{ fontFamily: "Josefin sans,sans-serif" }}
+            >
+              Let's Play The Music!
+            </p>
+            </div>
           </section>
           <section>
             <div className="flex items-center">
