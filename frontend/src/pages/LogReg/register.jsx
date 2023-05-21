@@ -14,7 +14,7 @@ export default function Login() {
         className="bg-no-repeat bg-center bg-cover w-screen h-screen filter-brightness-1"
         style={{ backgroundImage: "url(./assets/background/bgImgLR.png)" }}
       >
-        <div className="container py-16 px-28" style={{ zIndex: "2px" }}>
+        <div className="container py-15 px-28" style={{ zIndex: "2px" }}>
           <section className="flex items-center">
             <img className="w-[120px]" src="./assets/logo.png" alt="" />
             <p

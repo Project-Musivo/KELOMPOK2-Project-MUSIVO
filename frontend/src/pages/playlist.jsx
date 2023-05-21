@@ -13,13 +13,13 @@ const Playlist = () => {
 
     return (
     <React.Fragment>
-      <div className="flex">
+      <div className="flex bg-gradient-to-b from-red-800 from-1% to-black to-80% ">
         <Sidebar />
         <div className="w-screen">
           <NavigationBar />
           <div className="playlist ps-[125px] pe-[50px]">
             <div className="flex mt-[100px] mb-[50px]">
-            <img src="./assets/album music/collide.jpg" className="w-[225px] rounded-lg"/>
+            <img src="./assets/album music/collide.jpg" className="w-[225px] shadow-md bg-white rounded-lg"/>
             <div className="flex flex-col mt-[80px] mx-10">
             <h1 className="text-[28px] font-bold ">Morning Vibes</h1>
             <p className="text-[12px]"><span className="font-bold">Nanaa</span>, 4 Playlist , 6 Mei 2023</p>
