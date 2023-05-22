@@ -6,10 +6,8 @@ import Playlist from "./pages/playlist";
 import Login from "./pages/LogReg/Login";
 import Regis from "./pages/LogReg/Regis";
 
-
-import Login from "./pages/LogReg/register";
+// import Login from "./pages/LogReg/register";
 import Leaderboard from "./pages/leaderboard";
-
 
 function App() {
   return (
@@ -19,7 +17,6 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/regis" element={<Regis />} />
-
 
         <Route path="/favorit" element={<Favorit />} />
         <Route path="/playlist" element={<Playlist />} />
