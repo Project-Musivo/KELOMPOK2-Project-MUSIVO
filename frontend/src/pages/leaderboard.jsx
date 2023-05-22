@@ -42,7 +42,7 @@ const Leaderboard = () => {
         <NavigationBar />
         <Tabs value="html" orientation="vertical">
           <div className="h-screen w-full pt-10 ms-[65px] ps-[60px] flex mt-[60px]">
-            <Card className="bg-[#222222] basis-1/5 ml-auto h-full max-h-[39rem] shadow-lg">
+            <Card className="bg-card basis-1/5 ml-auto h-full max-h-[39rem] shadow-lg">
               <TabsHeader className="bg-transparent">
                 {data.map(({ label, value }) => (
                   <Tab key={value} value={value} className="text-white">
