@@ -45,8 +45,8 @@ const Leaderboard = () => {
           <div className="h-screen w-full pt-10 ms-[65px] ps-[60px] flex mt-[60px]">
             <Card className="bg-card basis-1/5 ml-auto h-full max-h-[39rem] shadow-lg">
               <TabsHeader className="bg-transparent">
-                {data.map(({label}, i) => (
-                  <Tab key={i} value={label} className="text-white">
+                {data.map(({value, label}) => (
+                  <Tab key={value} value={label} className="text-white">
                     {label}
                   </Tab>
                 ))}
@@ -54,8 +54,8 @@ const Leaderboard = () => {
             </Card>
             <div className="h-full max-h-[38rem] mx-auto basis-3/4">
               <TabsBody>
-                {data.map(({list, label}) => (
-                  <TabPanel key={label} value={list}>
+                {data.map(({list, value}) => (
+                  <TabPanel key={value} value={list}>
                     <div className="w-full h-2/5 mb-[28px] flex">
                       <img
                         src="./assets/album music/classic.jpg"
