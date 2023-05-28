@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
-import Listfav from "../components/listFav/listfav";
-import TableList from "../components/tableList/tableList";
-// import { data } from "../data/rank";
-// import { dataTopanime10, dataTopglobal50, dataTopWest70 } from "../../data/music";
+// import Listfav from "../components/listFav/listfav";
+// import TableList from "../components/tableList/tableList";
+import { data } from "../data/rank";
 
 import {
   Card,
@@ -15,27 +14,7 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 
-const data = [
-  {
-    value: "global",
-    label: "Top Global 50",
-    img: "./assets/album music/classic.jpg",
-    list: "../components/listleaderboard/topglobal50",
-},
-{
-    label: "Top West 70",
-    img: "./assets/album music/classic.jpg",
-    list: "../components/listleaderboard/topwest70",
-},
-{
-    label: "Top Anime 10",
-    img: "./assets/album music/classic.jpg",
-    list: "../components/listleaderboard/topanime10",
-},
-];
-
 const Leaderboard = () => {
-
   return (
     <React.Fragment>
       <Sidebar />

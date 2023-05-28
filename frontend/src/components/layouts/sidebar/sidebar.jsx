@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
-
   const [selectedMenu, setSelectedMenu] = useState(null);
   const Menus = [
     { title: "Home", src: "home", path: "/" },
@@ -52,7 +51,7 @@ const Sidebar = () => {
                 className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
               ${Menu.gap ? "mt-9" : "mt-3"} ${index === 0 && "bg-light-white"}
               ${open && `hover:text-slate-100 hover:bg-gray-500`}
-              `}
+              `} // != >= W <= != //
               >
                 <img src={`./assets/icon/${Menu.src}.svg`} />
                 <span
