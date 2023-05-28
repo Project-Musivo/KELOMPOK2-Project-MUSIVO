@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
   const [selectedMenu, setSelectedMenu] = useState(null);
+
   const Menus = [
     { title: "Home", src: "home", path: "/" },
     { title: "Playlist", src: "playlist", path: "/playlist" },

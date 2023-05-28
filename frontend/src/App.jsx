@@ -6,6 +6,7 @@ import Login from "./pages/LogReg/register";
 import Leaderboard from "./pages/leaderboard";
 import About from "./pages/settingPage/about";
 
+
 function App() {
   return (
     <BrowserRouter>
