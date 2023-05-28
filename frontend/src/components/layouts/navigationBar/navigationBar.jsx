@@ -24,7 +24,7 @@ const NavigationBar = () => {
 
   return (
     <nav
-      className="border-gray-200 ms-[70px] bg-[#1B1A1B] "
+      className="border-gray-200 ms-[80px] bg-[#1B1A1B] fixed w-full pe-20 top-0 z-40"
       style={{ boxShadow: "0px 2px 2px rgba(255, 255, 255, 0.25)" }}
     >
       <div className="max-w-screen-xl flex items-center justify-between p-4">
@@ -33,7 +33,7 @@ const NavigationBar = () => {
           name="search"
           style={seacrhStyle}
           placeholder="Search top 5 global"
-          className="py-[5px] px-[130px] rounded-md ms-[45px]"
+          className="py-[5px] w-[350px] rounded-md ms-[45px]"
         />
         <div className="flex items-center md:order-2">
           <button
@@ -51,8 +51,13 @@ const NavigationBar = () => {
               alt="user photo"
             />
           </button>
-          <span className="ms-2 border-e-2 pe-5">Nanaa</span>
-          <img src={bellImg} alt="" className="mx-3 w-[18px]" />
+          <span className=" border-e-2 pe-5">Nanaa</span>
+          <img
+            src={bellImg}
+            alt=""
+            className="mx-3 w-[18px] cursor-pointer"
+            onClick={() => alert("Notification here")}
+          />
           <div
             className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
             id="user-dropdown"
@@ -71,23 +76,7 @@ const NavigationBar = () => {
                   href="#"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                >
                   Settings
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                >
-                  Earnings
                 </a>
               </li>
               <li>

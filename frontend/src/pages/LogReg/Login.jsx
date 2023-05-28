@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import AccordGoogle from "./accordGoogle";
+import AccordInput from "../../components/Input/input";
+import { Formik, Form } from "formik";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -12,88 +14,77 @@ export default function Login() {
   }
 
   return (
-    <div
-      className="bg-no-repeat bg-center bg-cover w-screen h-screen filter-brightness-1 bg-image md:bg-image-md"
-    >
-      <div className="container py-5 px-4 sm:px-28" style={{ zIndex: "11px" }}>
-        <section className="flex items-center justify-center sm:justify-start">
+    <div className="bg-image md:bg-image-md image-md bg-no-repeat bg-center bg-cover w-screen h-screen filter-brightness-1">
+      <div className="container pt-5 px-20 md:px-8" style={{ zIndex: "11px" }}>
+        <section className="flex items-center md:justify-center">
           <img className="w-28 h-28" src="./assets/logo.png" alt="" />
           <p className="text-white text-4xl">
             MUSIVO{" "}
             <span>
               <p className="text-sm">Let’s Play The Music</p>
-            </span>{" "}
+            </span>
           </p>
         </section>
-        <section>
+        <section className="mt-8">
           <div className="flex items-center">
             <div className="max-w-md w-full space-y-8">
-              <form className="mt-8 space-y-6" onSubmit={handleLogin}>
-                <input type="hidden" name="remember" value="true" />
-                <div className="rounded-md shadow-sm-space-y-px">
-                  <div className="mt-4">
-                    <label htmlFor="email" className="sr-only">
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      required
-                      className="appearance-none relative bg-transparent block w-full h-10 rounded-lg px-3 py-6 border border-gray-300 placeholder-gray-500 text-white focus:outline-none focus:ring-white-500 focus:border-white focus:z-10 sm:text-sm"
-                      placeholder="Email"
-                      value={email}
-                      onChange={(event) => setEmail(event.target.value)}
-                    />
+              <Formik
+                initialValues={{
+                  email: "",
+                  password: "",
+                }}
+                validate={(values) => {
+                  const errors = {};
+                  if (!values.email) {
+                    errors.email = "Email is required";
+                  }
+                  if (!values.password) {
+                    errors.password = "Password is required";
+                  }
+                  return errors;
+                }}
+                onSubmit={handleLogin}
+              >
+                <Form className="space-y-4">
+                  <input type="hidden" name="remember" value="true" />
+                  <AccordInput
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    text="Email"
+                  />
+                  <AccordInput
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    text="Password"
+                  />
+                  <div className="forgot">
+                    <p>Forgot Password?</p>
                   </div>
-                  <div className="mt-4 sm:mt-6">
-                    <label htmlFor="password" className="sr-only">
-                      Password
-                    </label>
-                    <input
-                      id="password"
-                      name="password"
-                      type="password"
-                      autoComplete="current-password"
-                      required
-                      className="appearance-none relative bg-transparent block w-full h-12 rounded-lg px-3 py-2 border border-gray-300 placeholder-gray-500 text-white focus:outline-none focus:ring-white-500 focus:border-white focus:z-10 sm:text-sm"
-                      placeholder="Password"
-                      value={password}
-                      onChange={(event) => setPassword(event.target.value)}
-                    />
-                  </div>
-                </div>
-                <div className="flex items-center justify-between mt-4">
-                  <div className="text-sm">
-                    <a
-                      href="#"
-                      className="font-medium text-indigo-600 hover:text-white"
+                  <div className="pt-12">
+                    <button
+                      type="submit"
+                      className="py-2 group relative w-full flex justify-center px-4 border border-white text-sm font-medium rounded-md text-white hover:border-indigo-600 md:h-11 md:px-1"
                     >
-                      Forgot Your Password?
-                    </a>
+                      <span className="absolute left-0 inset-y-0 flex items-center pl-3"></span>
+                      Sign In
+                    </button>
+                    <div className="mt-2">
+                      <h3 className="text-white text-md text-center py-4">
+                        Or
+                      </h3>
+                      <h2 className="text-white text-sm px-4 py-3 text-center">
+                        No have an account ?{" "}
+                        <span className="text-red-700 inline-block">
+                          Register Now
+                        </span>
+                      </h2>
+                    </div>
+                    <AccordGoogle />
                   </div>
-                </div>
-                <div className="mt-4">
-                  <button
-                    type="submit"
-                    className="py-3 group relative w-full flex justify-center px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-white"
-                  >
-                    <span className="absolute left-0 inset-y-0 flex items-center pl-3"></span>
-                    Sign In
-                  </button>
-                </div>
-                <div className="mt-4">
-                  <h3 className="text-white text-xl text-center">Or</h3>
-                </div>
-                <AccordGoogle />
-                <h1 className="text-white text-lg px-4 sm:px-14 text-center">
-                  No have an account?{" "}
-                  <span className="text-rose-700 block sm:inline">
-                    Register Now
-                  </span>
-                </h1>
-              </form>
+                </Form>
+              </Formik>
             </div>
           </div>
         </section>

@@ -14,13 +14,10 @@ import ContentSwiper from "./contentSwiper";
 
 const Genre = () => {
   return (
-    <div className="genre mt-[50px]">
+    <div className="genre mt-[50px] ">
       <Swiper
         slidesPerView={3}
-        spaceBetween={40}
-        pagination={{
-          clickable: true,
-        }}
+        spaceBetween={50}
         // modules={[Pagination]}
         className="mySwiper"
       >
