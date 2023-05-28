@@ -8,14 +8,16 @@ const MostlyPlayed = () => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
+  console.log({ data: dataMostPlay.map((x) => x.id) });
+
   return (
     <div className="mostlyplayed flex justify-start gap-3 flex-wrap w-100 h-45">
       {dataMostPlay.map((music, index) => {
         const isPlaying = activeIndex === index;
         return (
           <div
-            className="boxPlay bg-white text-black py-3 w-[325px] flex items-center justify-evenly flex-wrap rounded-[5px]"
-            key={music.id}
+            className="boxPlay bg-white text-[#000] py-3 w-[325px] flex items-center justify-evenly flex-wrap rounded-[5px]"
+            key={index.id}
           >
             <span className="font-extrabold">{music.id}</span>
             <img src={music.image} alt="" className="w-[80px]" />

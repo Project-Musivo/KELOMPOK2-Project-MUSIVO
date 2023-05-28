@@ -3,8 +3,9 @@ import Home from "./pages/home";
 import Favorit from "./pages/favorit";
 import Playlist from "./pages/playlist";
 import Login from "./pages/LogReg/register";
-import Favorit from "./components/favorit/favorit";
 import Leaderboard from "./pages/leaderboard";
+import About from "./pages/settingPage/about";
+
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/favorit" element={<Favorit />} />
         <Route path="/playlist" element={<Playlist />} />
+        <Route path="/about" element={<About />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
       </Routes>
     </BrowserRouter>

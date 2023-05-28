@@ -1,35 +1,26 @@
 import { useState } from "react";
-<<<<<<< HEAD
-
-const Sidebar = () => {
-  const [open, setOpen] = useState(false);
-  const [selectedMenu, setSelectedMenu] = useState(null);
-
-=======
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
-
   const [selectedMenu, setSelectedMenu] = useState(null);
->>>>>>> 5847321442adfb91fdd41477deff2e06a9ea8fa1
+
   const Menus = [
     { title: "Home", src: "home", path: "/" },
-    { title: "Playlist", src: "playlist", path: "/playlist",},
-    { title: "Artisc ", src: "user", path: "/artisc",},
-    { title: "Favorit", src: "favorit", path: "/favorit",},
-    { title: "Leaderboard", src: "trophy", path: "/leaderboard",},
+    { title: "Playlist", src: "playlist", path: "/playlist" },
+    { title: "Artisc ", src: "user", path: "/artisc" },
+    { title: "Favorit", src: "favorit", path: "/favorit" },
+    { title: "Leaderboard", src: "trophy", path: "/leaderboard" },
     // { title: "Settings ", src: "setting", path: "/settings" },
     // { title: "Logout", src: "logout", gap: true },
   ];
 
   return (
-    <div className="flex fixed" style={{ zIndex: "2" }}>
+    <div className="flex fixed top-0 z-50">
       <div
-        className={` ${
+        className={`bg-14 ${
           open ? "w-72" : "w-20"
         }  h-screen p-5  pt-8 relative duration-300`}
-        style={{ backgroundColor: "black" }}
       >
         <img
           src="./assets/icon/control.png"
@@ -55,21 +46,15 @@ const Sidebar = () => {
         </div>
         <ul className="pt-[90px]">
           {Menus.map((Menu, index) => (
-<<<<<<< HEAD
-            <li
-              key={index}
-              className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
-=======
             <Link to={Menu.path}>
               <li
                 key={index}
                 className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
->>>>>>> 5847321442adfb91fdd41477deff2e06a9ea8fa1
               ${Menu.gap ? "mt-9" : "mt-3"} ${index === 0 && "bg-light-white"}
               ${open && `hover:text-slate-100 hover:bg-gray-500`}
               `}
               >
-                <img src={`./assets/icon/${Menu.src}.png`} />
+                <img src={`./assets/icon/${Menu.src}.svg`} />
                 <span
                   className={`${
                     open ? "" : "scale-0"
