@@ -1,9 +1,17 @@
 import React, { useState } from "react";
-import AccordGoogle from "./accordGoogle";
-import AccordInput from "../../components/Input/input";
 import { Formik, Form } from "formik";
+import AccordInput from "../../components/Input/input";
+import AccordGoogle from "./accordGoogle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 export default function Login() {
+  const [showPassword, setShowPassword] = useState(false)
+
+  function handleTogglePassword() {
+    setShowPassword(!showPassword)
+  }
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -54,11 +62,20 @@ export default function Login() {
                     text="Email"
                   />
                   <AccordInput
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                    text="Password"
-                  />
+                      type={showPassword ? "text" : "password"}
+                      name="password"
+                      placeholder="Password"
+                      text="Password"
+                      showPassword={showPassword}
+                      togglePassword={handleTogglePassword}
+                    />
+                    <button type="button" onClick={handleTogglePassword}>
+                  {showPassword ? (
+                    <FontAwesomeIcon icon={faEyeSlash} />
+                  ) : (
+                    <FontAwesomeIcon icon={faEye} />
+                  )}
+                </button>
                   <div className="forgot">
                     <p>Forgot Password?</p>
                   </div>

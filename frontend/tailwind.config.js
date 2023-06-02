@@ -30,12 +30,14 @@ module.exports = withMT({
 
       sm: { max: "576px" },
       // => @media (max-width: 576px) { ... }
+
+
     },
-    colors: {
-      "transparent-black": "rgba(25, 25, 25, 0.297)",
-      card: "rgb(34, 34, 34)",
-      backgroundd:'#141414'
-    },
+    colors:{
+      'transparent-black' : 'rgba(25, 25, 25, 0.297)',
+    }
+
+
   },
   plugins: [],
 });
