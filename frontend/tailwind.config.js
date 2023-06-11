@@ -10,7 +10,7 @@ module.exports = withMT({
   theme: {
     extend: {},
 
-    '2xl': {'max': '1535px'},
+    '2xl': { 'max': '1535px' },
 
     screens: {
       '2xl': { 'max': '1535px' },
@@ -44,6 +44,7 @@ module.exports = withMT({
 
 
 
+//  Yang lama
 // export default {
 //   content: [
 //     "./index.html",
