@@ -8,13 +8,6 @@ module.exports = withMT({
     "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        image: "url(./assets/background/Bg.png)",
-        "image-md": "url(./assets/background/Bg-md.png)",
-        imageF :'url(./assets/background/Bg.jpg)'
-      },
-    },
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }

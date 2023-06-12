@@ -27,7 +27,6 @@ export default function Login() {
     "bg2.jpg",
     "bg3.png",
     "bg4.jpg",
-    // Add more image URLs as needed
   ];
 
   useEffect(() => {

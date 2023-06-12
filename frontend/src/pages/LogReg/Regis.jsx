@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Formik, Form } from "formik";
 import AccordInput from "../../components/Input/input";
 import AccordGoogle from "./accordGoogle";
@@ -7,6 +7,7 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 export default function Regis() {
   const [showPassword, setShowPassword] = useState(false);
+  const [backgroundImageIndex, setBackgroundImageIndex] = useState(0);
 
   function handleTogglePassword() {
     setShowPassword(!showPassword);
@@ -19,8 +20,33 @@ export default function Regis() {
     console.log("Confirm Password:", values.confirmPassword);
   }
 
+  const backgroundImages = [
+    "bg1.jpg",
+    "bg2.jpg",
+    "bg3.png",
+    "bg4.jpg",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBackgroundImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const getBackgroundImageUrl = (index) => {
+    return `/assets/background/${backgroundImages[index]}`;
+  };
+
+
   return (
-    <div className="w-screen h-screen bg-imageF brightness-30">
+    <div
+    className="bg-no-repeat bg-center bg-cover w-screen h-screen filter-brightness-1 transition duration-1000 ease-in-out"
+    style={{
+      backgroundImage: `url(${getBackgroundImageUrl(backgroundImageIndex)})`,
+    }}
+  >
       <div className="container pt-5 md:pt-3 px-20 md:px-8">
         <section className="flex items-center md:justify-center">
           <img className="w-28 h-28" src="./assets/logo.png" alt="" />
