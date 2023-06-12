@@ -6,7 +6,7 @@ import Playlist from "./pages/playlist";
 import Login from "./pages/LogReg/Login";
 import Regis from "./pages/LogReg/Regis";
 
-import Login from "./pages/LogReg/register";
+// import Login from "./pages/LogReg/register";
 
 import About from "./pages/settingPage/about";
 
