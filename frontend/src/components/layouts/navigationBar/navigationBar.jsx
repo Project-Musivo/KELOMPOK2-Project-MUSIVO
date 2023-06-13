@@ -25,7 +25,7 @@ const NavigationBar = () => {
       <div className="max-w-screen-xl flex items-center justify-between p-4">
         <div className="ms-7 w-1/2 md:w-72">
           <Input
-            label="Search Top 5 Global"
+            label="Cari Top 5 Global"
             className="text-white"
             icon={<MagnifyingGlassIcon className="h-5 w-5" />}
           />
