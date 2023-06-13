@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  Navbar,
-  MobileNav,
   Typography,
   Button,
   Menu,
@@ -15,8 +13,6 @@ import {
   ChevronDownIcon,
   Cog6ToothIcon,
   InboxArrowDownIcon,
-  LifebuoyIcon,
-  PowerIcon,
   RocketLaunchIcon,
 } from "@heroicons/react/24/outline";
 
