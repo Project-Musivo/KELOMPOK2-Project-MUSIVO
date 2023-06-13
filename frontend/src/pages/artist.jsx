@@ -8,10 +8,10 @@ const Artist = () => {
     <React.Fragment>
       <NavigationBar />
       <Sidebar />
-      <div className="justify-center text-center my-[6rem]">
+      <div className="text-center my-[6rem]">
         <h1 className="text-4xl font-bold text-center">Popular Artist</h1>
         <p className="text-xs text-center">Lorem ipsum dolor sit amet.</p>
-        <div className="ml-28  w-[73rem] justify-center h-full text-center mt-5">
+        <div className="mx-auto w-[73rem]  h-full text-center mt-5">
           <div className="flex justify-evenly my-11">
             {dataArtist.map((artist, index) => (
               <div className="text-center items-center" key={index.id}>
