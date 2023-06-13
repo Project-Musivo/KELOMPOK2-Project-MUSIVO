@@ -28,6 +28,7 @@ module.exports = withMT({
       'sm': { 'max': '576px' },
       // => @media (max-width: 576px) { ... }
 
+
     },
     colors: {
       'transparent-black': 'rgba(25, 25, 25, 0.297)',
