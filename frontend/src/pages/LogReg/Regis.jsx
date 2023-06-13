@@ -19,7 +19,7 @@ export default function Regis() {
     console.log("Password:", values.password);
     console.log("Confirm Password:", values.confirmPassword);
   }
-
+// terbaruu
   const backgroundImages = [
     "bg1.jpg",
     "bg2.jpg",
