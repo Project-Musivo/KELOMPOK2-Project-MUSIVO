@@ -159,6 +159,7 @@ export default function Regis() {
                 )}
               </Formik>
             </div>
+            {/*  */}
           </div>
         </section>
       </div>
