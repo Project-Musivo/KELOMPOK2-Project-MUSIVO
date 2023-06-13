@@ -17,7 +17,10 @@ const NavigationBar = () => {
   }, []);
 
   return (
-    <nav style={{ boxShadow: "0px 2px 2px rgba(255, 255, 255, 0.25)" }}>
+    <nav
+      className="border-gray-200 ms-[80px] bg-[#1B1A1B] fixed w-full pe-20 top-0 z-40"
+      style={{ boxShadow: "0px 2px 2px rgba(255, 255, 255, 0.25)" }}
+    >
       <div className="max-w-screen-xl flex items-center justify-between p-4">
         <div className="ms-7 w-1/2 md:w-72">
           <Input
