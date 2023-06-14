@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Input } from "@material-tailwind/react";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 const NavigationBar = () => {
   const [bellImg, setBellImg] = useState("./assets/icon/bell2.png");
@@ -16,41 +14,43 @@ const NavigationBar = () => {
     return () => clearInterval(interval);
   }, []);
 
+
+
   return (
+        <div>
     <nav
-      className="border-gray-200 ms-[80px] bg-[#1B1A1B] fixed w-full pe-20 top-0 z-40"
+      className="border-gray-200 bg-[#1B1A1B] "
       style={{ boxShadow: "0px 2px 2px rgba(255, 255, 255, 0.25)" }}
     >
       <div className="max-w-screen-xl flex items-center justify-between p-4">
-        <div className="ms-7 w-1/2 md:w-72">
-          <Input
-            label="Cari Top 5 Global"
-            className="text-white"
-            icon={<MagnifyingGlassIcon className="h-5 w-5" />}
-          />
-        </div>
+      <img src={"./assets/logo.png"} 
+      style={{ height: "80px" }}/>
+     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+  <h1 style={{ marginBottom: "0.5rem", color: "white",marginRight: "50rem", fontSize: "25px" }}>Musicvo</h1>
+  <p style={{ marginTop: "0.5rem", color: "white", marginRight: "50rem" }}>admin</p>
+</div>
         <div className="flex items-center md:order-2">
           <button
             type="button"
-            className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-2 focus:ring-blue-gray-200"
-            style={{
-              backgroundImage: "url('./assets/icon/search-Icon.png')",
-              dataDropdownPlacement: "bottom",
-            }}
+            className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+            id="user-menu-button"
+            aria-expanded="false"
+            data-dropdown-toggle="user-dropdown"
+            data-dropdown-placement="bottom"
           >
-            <span className="sr-only">Buka menu pengguna</span>
+            <span className="sr-only">Open user menu</span>
             <img
-              className="w-9 h-9 rounded-full"
+              className="w-8 h-8 rounded-full"
               src="./assets/profileUser.png"
-              alt="foto pengguna"
+              alt="user photo"
             />
           </button>
-          <span className="border-e-2 pe-5">Nanaa</span>
+          <span className="ms-2 border-e-2 pe-5">Nanaa</span>
           <img
             src={bellImg}
             alt=""
             className="mx-3 w-[18px] cursor-pointer"
-            onClick={() => alert("Notifikasi di sini")}
+            onClick={() => alert("Notification here")}
           />
           <div
             className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
@@ -67,10 +67,10 @@ const NavigationBar = () => {
             <ul className="py-2" aria-labelledby="user-menu-button">
               <li>
                 <a
-                  href="/profilesetting"
+                  href="#"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >
-                  Pengaturan
+                  Settings
                 </a>
               </li>
               <li>
@@ -78,7 +78,7 @@ const NavigationBar = () => {
                   href="#"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >
-                  Keluar
+                  Sign out
                 </a>
               </li>
             </ul>
@@ -86,6 +86,7 @@ const NavigationBar = () => {
         </div>
       </div>
     </nav>
+  </div>
   );
 };
 
