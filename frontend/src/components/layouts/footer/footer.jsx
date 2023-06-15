@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="relative w-full ps-16 py-5 bg-14">
+      <footer className="relative w-full ps-16 py-5 bg-card">
         <div className="mx-auto w-full max-w-7xl px-8">
           <div className="flex flex-row gap-">
             <Typography variant="h4" className="mb-6 w-[200px] text-end p-5">
