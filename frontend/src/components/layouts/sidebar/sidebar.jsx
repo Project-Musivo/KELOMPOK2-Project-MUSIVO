@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
-  const [selectedMenu, setSelectedMenu] = useState(null);
 
+  const [selectedMenu, setSelectedMenu] = useState(null);
   const Menus = [
     { title: "Home", src: "home", path: "/" },
     { title: "Playlist", src: "playlist", path: "/playlist" },
@@ -25,7 +25,7 @@ const Sidebar = () => {
         <img
           src="./assets/icon/control.png"
           className={`absolute cursor-pointer -right-3 top-[70px] w-7 border-dark-purple
-          border-2 rounded-full z-20 ${!open && "rotate-180"} w-[35px]`}
+           border-2 rounded-full z-20 ${!open && "rotate-180"} w-[35px]`}
           onClick={() => setOpen(!open)}
         />
         <div className="flex gap-x-3 items-center absolute top-5 left-2 w-[70px]">
@@ -52,7 +52,7 @@ const Sidebar = () => {
                 className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
               ${Menu.gap ? "mt-9" : "mt-3"} ${index === 0 && "bg-light-white"}
               ${open && `hover:text-slate-100 hover:bg-gray-500`}
-              `} // != >= W <= != //
+              `}
               >
                 <img src={`./assets/icon/${Menu.src}.svg`} />
                 <span
