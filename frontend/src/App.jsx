@@ -8,6 +8,7 @@ import About from "./pages/settingPage/about";
 import Leaderboard from "./pages/leaderboard";
 import Premium from "./pages/premium";
 import Artist from "./pages/artist";
+import ProfileSetting from "./pages/settingPage/profilesetting";
 
 function App() {
   return (
