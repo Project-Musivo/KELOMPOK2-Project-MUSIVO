@@ -31,13 +31,13 @@ function App() {
 
 export default App;
 
-//admin
+// Untuk Admin
 
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Dasboardadmin from "./admin/dasboardadmin";
-// import Music from "./admin/musicadmin";
-// import DataUser from "./admin/datauseradmin";
-// import Setting from "./admin/settingadmin";
+// import Dasboardadmin from "./pages/dasboardadmin";
+// import Music from "./pages/musicadmin";
+// import DataUser from "./pages/datauseradmin";
+// import Setting from "./pages/settingadmin";
 
 // function App() {
 // return (
@@ -51,5 +51,3 @@ export default App;
 // </BrowserRouter>
 // );
 // }
-
-// export default App;

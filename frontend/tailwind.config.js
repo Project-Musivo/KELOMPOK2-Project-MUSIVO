@@ -23,15 +23,17 @@ module.exports = withMT({
 
       sm: { max: "576px" },
       // => @media (max-width: 576px) { ... }
-
-
     },
     colors: {
-      'transparent-black': 'rgba(25, 25, 25, 0.297)',
-      '14': '#141414'
-    }
+      "transparent-black": "rgba(25, 25, 25, 0.297)",
+      '14': "#141414",
+      'card' : "#1a1b1a"
+    },
 
-
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+    },
   },
+
   plugins: [],
 });
