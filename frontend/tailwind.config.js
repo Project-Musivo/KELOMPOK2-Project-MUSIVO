@@ -26,8 +26,9 @@ module.exports = withMT({
 
 
     },
-    colors:{
-      'transparent-black' : 'rgba(25, 25, 25, 0.297)',
+    colors: {
+      'transparent-black': 'rgba(25, 25, 25, 0.297)',
+      '14': '#141414'
     }
 
 

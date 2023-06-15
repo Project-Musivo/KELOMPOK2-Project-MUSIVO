@@ -7,6 +7,7 @@ import Regis from "./pages/LogReg/Regis";
 import About from "./pages/settingPage/about";
 import Leaderboard from "./pages/leaderboard";
 import Premium from "./pages/premium";
+import Artist from "./pages/artist";
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/regis" element={<Regis />} />
         <Route path="/favorit" element={<Favorit />} />
-        <Route path="/profilesetting" element={<ProfileSetting />} />
+        {/* <Route path="/profilesetting" element={<ProfileSetting />} /> */}
         <Route path="/playlist" element={<Playlist />} />
         <Route path="/about" element={<About />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/artist" element={<Artist />} />
         <Route path="/premium" element={<Premium />} />
       </Routes>
     </BrowserRouter>

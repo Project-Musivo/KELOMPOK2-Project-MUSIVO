@@ -12,8 +12,9 @@ import {
   UserCircleIcon,
   ChevronDownIcon,
   Cog6ToothIcon,
-  InboxArrowDownIcon,
+  // InboxArrowDownIcon,
   RocketLaunchIcon,
+  PowerIcon,
 } from "@heroicons/react/24/outline";
 
 const ProfileMenu = () => {
