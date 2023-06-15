@@ -8,7 +8,7 @@ const Sidebar = () => {
   const Menus = [
     { title: "Home", src: "home", path: "/" },
     { title: "Playlist", src: "playlist", path: "/playlist" },
-    { title: "Artisc ", src: "user", path: "/artisc" },
+    { title: "Artisc ", src: "user", path: "/artist" },
     { title: "Favorit", src: "favorit", path: "/favorit" },
     { title: "Leaderboard", src: "trophy", path: "/leaderboard" },
     // { title: "Settings ", src: "setting", path: "/settings" },
