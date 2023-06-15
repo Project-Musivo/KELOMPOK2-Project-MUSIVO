@@ -4,15 +4,11 @@ import Favorit from "./pages/favorit";
 import Playlist from "./pages/playlist";
 import Login from "./pages/LogReg/Login";
 import Regis from "./pages/LogReg/Regis";
-<<<<<<< HEAD
-=======
-// import ProfileSetting from "./pages/settingPage/profilesetting";
-
->>>>>>> bf006dbff311e488b98fd90719c1ddd9675cd9b2
 import About from "./pages/settingPage/about";
 import Leaderboard from "./pages/leaderboard";
 import Premium from "./pages/premium";
 import Artist from "./pages/artist";
+import Footer from "./components/layouts/footer/footer";
 
 function App() {
   return (
@@ -27,6 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/artist" element={<Artist />} />
+        <Route path="/footer" element={<Footer />} />
         <Route path="/premium" element={<Premium />} />
       </Routes>
     </BrowserRouter>
@@ -35,7 +32,6 @@ function App() {
 
 export default App;
 
-<<<<<<< HEAD
 // Untuk Admin
 
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -56,28 +52,3 @@ export default App;
 // </BrowserRouter>
 // );
 // }
-
-=======
-//admin
-
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Dasboardadmin from "./admin/dasboardadmin";
-// import Music from "./admin/musicadmin";
-// import DataUser from "./admin/datauseradmin";
-// import Setting from "./admin/settingadmin";
-
-// function App() {
-// return (
-// <BrowserRouter>
-// <Routes>
-// <Route path="/" element={<Dasboardadmin />} />
-// <Route path="/Music" element={<Music />} />
-// <Route path="/DataUser" element={<DataUser />} />
-// <Route path="/Setting" element={<Setting />} />
-// </Routes>
-// </BrowserRouter>
-// );
-// }
-
->>>>>>> bf006dbff311e488b98fd90719c1ddd9675cd9b2
-// export default App;

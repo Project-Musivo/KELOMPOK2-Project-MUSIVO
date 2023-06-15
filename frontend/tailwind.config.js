@@ -25,9 +25,14 @@ module.exports = withMT({
       // => @media (max-width: 576px) { ... }
     },
     colors: {
-      'transparent-black': 'rgba(25, 25, 25, 0.297)',
-      '14': '#141414'
-    }
+      "transparent-black": "rgba(25, 25, 25, 0.297)",
+      14: "#141414",
+    },
+
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+    },
   },
+
   plugins: [],
 });
