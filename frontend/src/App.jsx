@@ -6,7 +6,7 @@ import Login from "./pages/LogReg/Login";
 import Regis from "./pages/LogReg/Regis";
 
 // import Login from "./pages/LogReg/register";
-
+import ProfileSetting from "./pages/settingPage/profilesetting";
 import About from "./pages/settingPage/about";
 import Leaderboard from "./pages/leaderboard";
 import Artist from "./pages/artist";
