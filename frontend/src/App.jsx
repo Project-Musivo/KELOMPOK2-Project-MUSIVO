@@ -7,6 +7,7 @@ import Regis from "./pages/LogReg/Regis";
 import About from "./pages/settingPage/about";
 import Leaderboard from "./pages/leaderboard";
 import Premium from "./pages/premium";
+import Artist from "./pages/artist";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/playlist" element={<Playlist />} />
         <Route path="/about" element={<About />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/artist" element={<Artist />} />
         <Route path="/premium" element={<Premium />} />
       </Routes>
     </BrowserRouter>
@@ -28,26 +30,25 @@ function App() {
 
 export default App;
 
-// Untuk Admin
+//admin
 
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Dasboardadmin from "./pages/dasboardadmin";
-// import Music from "./pages/musicadmin";
-// import DataUser from "./pages/datauseradmin";
-// import Setting from "./pages/settingadmin";
-
+// import Dasboardadmin from "./admin/dasboardadmin";
+// import Music from "./admin/musicadmin";
+// import DataUser from "./admin/datauseradmin";
+// import Setting from "./admin/settingadmin";
 
 // function App() {
-  // return (
-    // <BrowserRouter>
-      // <Routes>
-        // <Route path="/" element={<Dasboardadmin />} />
-        // <Route path="/Music" element={<Music />} />
-        // <Route path="/DataUser" element={<DataUser />} />
-        // <Route path="/Setting" element={<Setting />} />
-      // </Routes>
-    // </BrowserRouter>
-  // );
+// return (
+// <BrowserRouter>
+// <Routes>
+// <Route path="/" element={<Dasboardadmin />} />
+// <Route path="/Music" element={<Music />} />
+// <Route path="/DataUser" element={<DataUser />} />
+// <Route path="/Setting" element={<Setting />} />
+// </Routes>
+// </BrowserRouter>
+// );
 // }
 
 // export default App;
