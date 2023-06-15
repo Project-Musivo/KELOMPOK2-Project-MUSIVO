@@ -28,22 +28,24 @@ const Sidebar = () => {
            border-2 rounded-full z-20 ${!open && "rotate-180"} w-[35px]`}
           onClick={() => setOpen(!open)}
         />
-        <div className="flex gap-x-3 items-center absolute top-5 left-2 w-[70px]">
-          <img
-            src={"./assets/logo.png"}
-            className={`w-[60px] cursor-pointer duration-500 ${
-              open && "rotate-[360deg]"
-            }`}
-          />
-          <h1
-            className={`text-white origin-left font-medium text-[35px] duration-[0.3s] ${
-              !open && "scale-0"
-            }`}
-            style={{ fontFamily: "Josefin Sans, sans-serif" }}
-          >
-            Musivo
-          </h1>
-        </div>
+        <Link to="/">
+          <div className="flex gap-x-3 items-center absolute top-5 left-2 w-[70px]">
+            <img
+              src={"./assets/logo.png"}
+              className={`w-[60px] cursor-pointer duration-500 ${
+                open && "rotate-[360deg]"
+              }`}
+            />
+            <h1
+              className={`text-white origin-left font-medium text-[35px] duration-[0.3s] ${
+                !open && "scale-0"
+              }`}
+              style={{ fontFamily: "Josefin Sans, sans-serif" }}
+            >
+              Musivo
+            </h1>
+          </div>
+        </Link>
         <ul className="pt-[90px]">
           {Menus.map((Menu, index) => (
             <Link to={Menu.path}>

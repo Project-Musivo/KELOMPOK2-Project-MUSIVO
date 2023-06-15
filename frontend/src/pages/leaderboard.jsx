@@ -57,7 +57,11 @@ const Leaderboard = () => {
                   <TabPanel key={value} value={value}>
                     <div className="w-full h-2/5 mb-[28px] flex">
                       <img
+<<<<<<< HEAD
                         src="../../public/assets/album music/classic.jpg"
+=======
+                        src="./assets/album music/classic.jpg"
+>>>>>>> bf006dbff311e488b98fd90719c1ddd9675cd9b2
                         className="w-1/4 h-full rounded-lg"
                         alt=""
                         srcset=""
