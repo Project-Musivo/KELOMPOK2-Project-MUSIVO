@@ -4,7 +4,7 @@ import Favorit from "./pages/favorit";
 import Playlist from "./pages/playlist";
 import Login from "./pages/LogReg/Login";
 import Regis from "./pages/LogReg/Regis";
-// import ProfileSetting from "./pages/settingPage/profilesetting";
+import ProfileSetting from "./pages/settingPage/profilesetting";
 
 import About from "./pages/settingPage/about";
 import Leaderboard from "./pages/leaderboard";
@@ -19,7 +19,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/regis" element={<Regis />} />
         <Route path="/favorit" element={<Favorit />} />
-        {/* <Route path="/profilesetting" element={<ProfileSetting />} /> */}
+        <Route path="/profilesetting" element={<ProfileSetting />} />
         <Route path="/playlist" element={<Playlist />} />
         <Route path="/about" element={<About />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
