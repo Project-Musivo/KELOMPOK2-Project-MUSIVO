@@ -7,10 +7,10 @@ const Sidebar = () => {
   const [selectedMenu, setSelectedMenu] = useState(null);
   const Menus = [
     { title: "Home", src: "home", path: "/" },
-    { title: "Playlist", src: "playlist", path: "/playlist",},
-    { title: "Artisc ", src: "user", path: "/artisc",},
-    { title: "Favorit", src: "favorit", path: "/favorit",},
-    { title: "Leaderboard", src: "trophy", path: "/leaderboard",},
+    { title: "Playlist", src: "playlist", path: "/playlist" },
+    { title: "Artisc ", src: "user", path: "/artist" },
+    { title: "Favorit", src: "favorit", path: "/favorit" },
+    { title: "Leaderboard", src: "trophy", path: "/leaderboard" },
     // { title: "Settings ", src: "setting", path: "/settings" },
     // { title: "Logout", src: "logout", gap: true },
   ];
@@ -18,10 +18,9 @@ const Sidebar = () => {
   return (
     <div className="flex fixed top-0 z-50">
       <div
-        className={` ${
+        className={`bg-14 ${
           open ? "w-72" : "w-20"
         }  h-screen p-5  pt-8 relative duration-300`}
-        style={{ backgroundColor: "black" }}
       >
         <img
           src="./assets/icon/control.png"
@@ -29,22 +28,24 @@ const Sidebar = () => {
            border-2 rounded-full z-20 ${!open && "rotate-180"} w-[35px]`}
           onClick={() => setOpen(!open)}
         />
-        <div className="flex gap-x-3 items-center absolute top-5 left-2 w-[70px]">
-          <img
-            src={"./assets/logo.png"}
-            className={`w-[60px] cursor-pointer duration-500 ${
-              open && "rotate-[360deg]"
-            }`}
-          />
-          <h1
-            className={`text-white origin-left font-medium text-[35px] duration-[0.3s] ${
-              !open && "scale-0"
-            }`}
-            style={{ fontFamily: "Josefin Sans, sans-serif" }}
-          >
-            Musivo
-          </h1>
-        </div>
+        <Link to="/">
+          <div className="flex gap-x-3 items-center absolute top-5 left-2 w-[70px]">
+            <img
+              src={"./assets/logo.png"}
+              className={`w-[60px] cursor-pointer duration-500 ${
+                open && "rotate-[360deg]"
+              }`}
+            />
+            <h1
+              className={`text-white origin-left font-medium text-[35px] duration-[0.3s] ${
+                !open && "scale-0"
+              }`}
+              style={{ fontFamily: "Josefin Sans, sans-serif" }}
+            >
+              Musivo
+            </h1>
+          </div>
+        </Link>
         <ul className="pt-[90px]">
           {Menus.map((Menu, index) => (
             <Link to={Menu.path}>
@@ -55,7 +56,7 @@ const Sidebar = () => {
               ${open && `hover:text-slate-100 hover:bg-gray-500`}
               `}
               >
-                <img src={`./assets/icon/${Menu.src}.png`} />
+                <img src={`./assets/icon/${Menu.src}.svg`} />
                 <span
                   className={`${
                     open ? "" : "scale-0"

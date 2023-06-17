@@ -164,3 +164,132 @@ const dataFavorit = [
   },
 ];
 export { dataMusic, dataMostPlay, dataTopPlay, dataFavorit ,dataPlaylist};
+const dataTopglobal50 = [
+  {
+    id: 1,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 2,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+];
+const dataTopanime10 = [
+  {
+    id: 1,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 2,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+];
+const dataTopWest70 = [
+  {
+    id: 1,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 2,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+  {
+    id: 3,
+    image: "",
+    title: "Kill Bill",
+    artis: "SZA",
+    date: "-",
+    time: "3.46",
+  },
+];
+export { dataMusic, dataMostPlay, dataTopPlay, dataFavorit, dataTopWest70, dataTopanime10, dataTopglobal50 };
+
+
