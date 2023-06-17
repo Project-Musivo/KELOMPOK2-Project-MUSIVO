@@ -59,6 +59,9 @@ const ProfileMenu = () => {
             className="border border-blue-500 p-0.5"
             src="./assets/profileUser.png"
           />
+          <div className="text-white">
+            <h2>Nanaa</h2>
+          </div>
           <ChevronDownIcon
             strokeWidth={2.5}
             className={`h-3 w-3 transition-transform ${
