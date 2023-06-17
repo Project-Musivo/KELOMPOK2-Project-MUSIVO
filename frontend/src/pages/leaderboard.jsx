@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
-import Listfav from "../components/listFav/listfav";
-import TableList from "../components/tableList/tableList";
+// import Listfav from "../components/listFav/listfav";
+// import TableList from "../components/tableList/tableList";
 // import { dataTopanime10, dataTopglobal50, dataTopWest70 } from "../../data/music";
+import { data } from "../data/rank";
 
 import {
   Card,
@@ -15,32 +16,15 @@ import {
 } from "@material-tailwind/react";
 
 const Leaderboard = () => {
-  const data = [
-    {
-      label: "Top Global 50",
-      value: "html",
-      isi: <Listfav />,
-    },
-    {
-      label: "Top 70 West songs ",
-      value: "react",
-      isi: <TableList />,
-    },
-    {
-      label: "Top 10 Anime Ost",
-      value: "vue",
-      desc: `We're not always in the position that we want to be at.
-        We're constantly growing. We're constantly making mistakes. We're
-        constantly trying to express ourselves and actualize our dreams.`,
-    },
-  ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Mengatur posisi scroll ke bagian atas saat halaman dimuat
+  }, []);
   return (
     <React.Fragment>
       <Sidebar />
       <div>
         <NavigationBar />
-        <Tabs value="html" orientation="vertical">
+        <Tabs value="global" orientation="vertical">
           <div className="h-screen w-full pt-10 ms-[65px] ps-[60px] flex mt-[60px]">
             <Card className="bg-[#222222] basis-1/5 ml-auto h-full max-h-[39rem] shadow-lg">
               <TabsHeader className="bg-transparent">
@@ -53,11 +37,11 @@ const Leaderboard = () => {
             </Card>
             <div className="h-full max-h-[38rem] mx-auto basis-3/4">
               <TabsBody>
-                {data.map(({ value, isi }) => (
+                {data.map(({ value, list }) => (
                   <TabPanel key={value} value={value}>
                     <div className="w-full h-2/5 mb-[28px] flex">
                       <img
-                        src="../../public/assets/album music/classic.jpg"
+                        src="./assets/album music/classic.jpg"
                         className="w-1/4 h-full rounded-lg"
                         alt=""
                         srcset=""
@@ -65,7 +49,7 @@ const Leaderboard = () => {
                     </div>
                     <Card className="w-full bg-card h-3/5 ">
                       {/* <Listfav /> */}
-                      {isi}
+                      {list}
                     </Card>
                   </TabPanel>
                 ))}

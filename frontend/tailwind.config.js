@@ -8,70 +8,32 @@ module.exports = withMT({
     "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-
-    '2xl': { 'max': '1535px' },
-
     screens: {
-      '2xl': { 'max': '1535px' },
+      "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
 
-      'xl': { 'max': '1279px' },
+      xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }
 
-      'lg': { 'max': '1023px' },
+      lg: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }
 
-      'md': { 'max': '767px' },
+      md: { max: "767px" },
       // => @media (max-width: 767px) { ... }
 
-      'sm': { 'max': '576px' },
+      sm: { max: "576px" },
       // => @media (max-width: 576px) { ... }
-
-
     },
     colors: {
-      'transparent-black': 'rgba(25, 25, 25, 0.297)',
-      'card': 'rgb(34, 34, 34)',
-      '14': '#141414'
-    }
+      "transparent-black": "rgba(25, 25, 25, 0.297)",
+      '14': "#141414",
+      'card' : "#1a1b1a"
+    },
+
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+    },
   },
+
   plugins: [],
 });
-
-
-
-
-
-
-//  Yang lama
-// export default {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,ts,jsx,tsx}",
-//   ],
-//   theme: {
-//     extend: {},
-//     screens: {
-//       '2xl': {'max': '1535px'},
-//       // => @media (max-width: 1535px) { ... }
-
-//       'xl': {'max': '1279px'},
-//       // => @media (max-width: 1279px) { ... }
-
-//       'lg': {'max': '1023px'},
-//       // => @media (max-width: 1023px) { ... }
-
-//       'md': {'max': '767px'},
-//       // => @media (max-width: 767px) { ... }
-
-//       'sm': {'max': '576px'},
-//       // => @media (max-width: 576px) { ... }
-//     },
-//     colors:{
-//       'transparent-black' : 'rgba(25, 25, 25, 0.297)',
-//     }
-
-//   },
-//   plugins: [],
-// }
