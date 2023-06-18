@@ -163,7 +163,7 @@ const dataFavorit = [
     time: "3.26",
   },
 ];
-export { dataMusic, dataMostPlay, dataTopPlay, dataFavorit ,dataPlaylist};
+
 const dataTopglobal50 = [
   {
     id: 1,
@@ -290,6 +290,4 @@ const dataTopWest70 = [
     time: "3.46",
   },
 ];
-export { dataMusic, dataMostPlay, dataTopPlay, dataFavorit, dataTopWest70, dataTopanime10, dataTopglobal50 };
-
-
+export { dataMusic, dataMostPlay, dataTopPlay, dataFavorit, dataTopWest70, dataTopanime10, dataTopglobal50 ,dataPlaylist};

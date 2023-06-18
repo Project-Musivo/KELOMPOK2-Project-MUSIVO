@@ -7,7 +7,6 @@ import Regis from "./pages/LogReg/Regis";
 import AboutDev from "./pages/settingPage/about";
 import Leaderboard from "./pages/leaderboard";
 import About from "./pages/settingPage/about";
-import Leaderboard from "./pages/leaderboard";
 import Premium from "./pages/premium";
 import Artist from "./pages/artist";
 import ProfileSetting from "./pages/settingPage/profilesetting";
@@ -20,16 +19,11 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/favorit" element={<Favorit />} />
         <Route path="/playlist" element={<Playlist />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/regis" element={<Regis />} />
-        <Route path="/favorit" element={<Favorit />} />
         <Route path="/profile" element={<ProfileSetting />} />
-        <Route path="/playlist" element={<Playlist />} />
         <Route path="/about" element={<AboutDev />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/about" element={<About />} />
-        <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/artist" element={<Artist />} />
         <Route path="/premium" element={<Premium />} />
       </Routes>
