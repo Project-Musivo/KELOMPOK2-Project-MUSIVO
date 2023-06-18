@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import NavigationBaradmin from "../components/layouts/navigationBar/navigationBaradmin";
-import Sidebaradmin from "../components/layouts/sidebar/sidebaradmin";
-import Navbar from "../components/admin/navbar";
-import Card from "../components/admin/card";
-import Profil from "../components/admin/profil";
+import NavigationBar from "../../components/layouts/navigationBar/navigationBar";
+import Sidebaradmin from "../../components/layouts/sidebar/sidebaradmin";
+import Navbar from "../../admin components/navbar";
+import Card from "../../admin components/card";
+import Profil from "../../admin components/profil";
 
   const Dasboardadmin = () => {
     return (
         <React.Fragment>
-        <NavigationBaradmin />
+        <NavigationBar/>
           <div>
           <Sidebaradmin />
           </div>
-          <div>
+          <div className="mt-32">
           <Navbar />
           </div>
           <Card />   

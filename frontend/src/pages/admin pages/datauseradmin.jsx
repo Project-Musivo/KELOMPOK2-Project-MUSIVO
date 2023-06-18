@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import NavigationBaradmin from "../components/layouts/navigationBar/navigationBaradmin";
-import Sidebaradmin from "../components/layouts/sidebar/sidebaradmin";
+import NavigationBar from "../../components/layouts/navigationBar/navigationBar";
+import Sidebaradmin from "../../components/layouts/sidebar/sidebaradmin";
 
 
   const DataUser = () => {
     return (
         <React.Fragment>
-        <NavigationBaradmin />
+        <NavigationBar />
           <div>
           <Sidebaradmin />
             <div>
