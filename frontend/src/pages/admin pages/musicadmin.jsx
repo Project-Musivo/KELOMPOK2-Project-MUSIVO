@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import NavigationBar from "../../components/layouts/navigationBar/navigationBar";
 import Sidebaradmin from "../../components/layouts/sidebar/sidebaradmin";
-
+import Navbar from "../../admin components/navbarmusic";
 
   const Music = () => {
     return (
         <React.Fragment>
-         <NavigationBar />
           <div>
           <Sidebaradmin />
             <div>
-              
+            <Navbar />
             </div>
         </div>
         </React.Fragment>

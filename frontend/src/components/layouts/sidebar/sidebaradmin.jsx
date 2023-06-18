@@ -6,13 +6,10 @@ const Sidebar = () => {
 
   const [selectedMenu, setSelectedMenu] = useState(null);
   const Menus = [
-    { title: "Dasboard", src: "dashboard", path: "/dashadmin" },
+    { title: "Dasboard", src: "dashboard", path: "/" },
     { title: "Music", src: "file music", path: "/music" },
     { title: "Data User ", src: "users", path: "/datauser" },
     { title: "Setting", src: "settings", path: "/setting" },
-    { title: "Log Out", src: "logout icon", path: "/login" },
-    // { title: "Settings ", src: "setting", path: "/settings" },
-    // { title: "Logout", src: "logout", gap: true },
   ];
 
   return (
@@ -24,7 +21,8 @@ const Sidebar = () => {
       >
         <img
           src="./assets/icon/control.png"
-          className={`absolute cursor-pointer -right-3 top-[70px] w-7 border-dark-purple border-2 rounded-full z-20 ${!open && "rotate-180"} w-[35px]`}
+          className={`absolute cursor-pointer -right-3 top-[70px] w-7 border-dark-purple
+           border-2 rounded-full z-20 ${!open && "rotate-180"} w-[35px]`}
           onClick={() => setOpen(!open)}
         />
         <div className="flex gap-x-3 items-center absolute top-5 left-2 w-[70px]">
@@ -34,14 +32,26 @@ const Sidebar = () => {
               open && "rotate-[360deg]"
             }`}
           />
-          <h1
-            className={`text-white origin-left font-medium text-[35px] duration-[0.3s] ${
-              !open && "scale-0"
-            }`}
-            style={{ fontFamily: "Josefin Sans, sans-serif" }}
-          >
-            Musivo
-          </h1>
+          <div>
+            <div className="flex flex-col items-center">
+            <h1
+              className={`text-white origin-left font-medium text-[35px] duration-[0.3s] ${
+                !open && "scale-0"
+              }`}
+              style={{ fontFamily: "Josefin Sans, sans-serif" }}
+            >
+              Musivo
+            </h1>
+            <p
+              className={`text-white origin-left font-medium text-[20px] duration-[0.3s] ${
+                !open && "scale-0"
+              }`}
+              style={{ fontFamily: "Josefin Sans, sans-serif" }}
+            >
+              Admin
+            </p>
+            </div>
+          </div>
         </div>
         <ul className="pt-[90px]">
           {Menus.map((Menu, index) => (
@@ -61,19 +71,24 @@ const Sidebar = () => {
                 >
                   {Menu.title}
                 </span>
+                
+          <img src="./assets/icon/logout.png" alt="Image Description" className={`text-white absolute  bottom-5 opacity-50 text-sm`} />
+          <span className={`text-white absolute  bottom-5 opacity-50 text-sm ${
+                    open ? "" : "scale-0"
+                  } origin-left duration-[0.3s]`}
+          style={{marginLeft: "100px"}}
+          >
+            logout
+          </span>
               </li>
             </Link>
           ))}
         </ul>
-        <p
-          className={`text-white absolute  bottom-5 opacity-50 text-sm duration-[0.4s] ${
-            open ? "left-[125px]" : "left-6"
-          }`}
-        >
-          2.0.0
-        </p>
+        <div>
+        </div>
       </div>
     </div>
   );
 };
+
 export default Sidebar;
