@@ -11,7 +11,6 @@ import About from "./pages/settingPage/about";
 import Leaderboard from "./pages/leaderboard";
 import Premium from "./pages/premium";
 import Artist from "./pages/artist";
-import Footer from "./components/layouts/footer/footer";
 
 // admin
 import Dasboardadmin from "./pages/admin/dasboardadmin";
@@ -33,7 +32,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/artist" element={<Artist />} />
-        <Route path="/footer" element={<Footer />} />
         <Route path="/premium" element={<Premium />} />
 
         {/* admin */}
