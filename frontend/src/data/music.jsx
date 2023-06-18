@@ -80,7 +80,7 @@ const dataMostPlay = [
   },
   {
     id: 2,
-    title: "Anggurman",
+    title: "Variasi Pink",
     artits: "Jason Ranti",
     image: "./assets/album music/anggurman.png",
   },
