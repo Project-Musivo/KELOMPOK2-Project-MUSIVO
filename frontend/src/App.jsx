@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Favorit from "./pages/favorit";
 import Playlist from "./pages/playlist";
+import Lyrics from "./pages/lyrics"
 import Login from "./pages/LogReg/Login";
 import Regis from "./pages/LogReg/Regis";
 import AboutDev from "./pages/settingPage/about";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/about" element={<AboutDev />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/about" element={<About />} />
+        <Route path="/lyrics" element={<Lyrics />} />
         <Route path="/artist" element={<Artist />} />
         <Route path="/premium" element={<Premium />} />
       </Routes>

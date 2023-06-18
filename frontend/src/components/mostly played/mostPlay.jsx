@@ -36,11 +36,13 @@ const MostlyPlayed = () => {
               className="cursor-pointer"
               onClick={() => togglePlay(index)}
             />
+            <a href="/lyrics">
             <img
               src="./assets/icon/detail.png"
               alt=""
               className="cursor-pointer"
             />
+            </a>
           </div>
         );
       })}
