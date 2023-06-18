@@ -20,10 +20,10 @@ const LINKS = [
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
-    const navigate = useNavigate();
-    const handleLinkClick = (link) => {
-      navigate(`/footer/${link}`);
-    };
+  const navigate = useNavigate();
+  const handleLinkClick = (link) => {
+    navigate(`/footer/${link}`);
+  };
 
   return (
     <>
@@ -41,7 +41,10 @@ const Footer = () => {
                   class="h-12 mr-2"
                   alt="FlowBite Logo"
                 />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                <span
+                  class="self-center text-[28px] font-semibold whitespace-nowrap dark:text-white"
+                  style={{ fontFamily: "Josefin Sans, sans-serif" }}
+                >
                   Musivo
                 </span>
               </a>
@@ -80,7 +83,7 @@ const Footer = () => {
                   className="opacity-80 transition-opacity hover:opacity-100"
                 >
                   <svg
-                    className="h-10 w-10"
+                    className="h-8 w-8"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -98,7 +101,7 @@ const Footer = () => {
                   className="opacity-80 transition-opacity hover:opacity-100"
                 >
                   <svg
-                    className="h-10 w-10"
+                    className="h-8 w-8"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -116,7 +119,7 @@ const Footer = () => {
                   className="opacity-80 transition-opacity hover:opacity-100"
                 >
                   <svg
-                    className="h-10 w-10"
+                    className="h-8 w-8"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -130,7 +133,7 @@ const Footer = () => {
                   className="opacity-80 transition-opacity hover:opacity-100"
                 >
                   <svg
-                    className="h-10 w-10"
+                    className="h-8 w-8"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
 import InfoPremium from "../components/premium/InfoPremium";
+import Footer from "../components/layouts/footer/footer";
 
 const premium = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Mengatur posisi scroll ke bagian atas saat halaman dimuat
+  }, []);
   return (
     <React.Fragment>
       <Sidebar />
@@ -24,7 +28,7 @@ const premium = () => {
       <h2 className="text-white text-center font-bold py-5 text-[30px] ">
         Why Go Premium ?
       </h2>
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-[100px]">
         <InfoPremium
           img="./assets/icon/icon user/padlock.png"
           title="Unlock Music."
@@ -41,6 +45,7 @@ const premium = () => {
           desc="Any song, any order"
         />
       </div>
+      <Footer />
     </React.Fragment>
   );
 };

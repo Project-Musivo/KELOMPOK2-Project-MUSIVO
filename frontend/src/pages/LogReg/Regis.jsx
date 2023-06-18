@@ -19,17 +19,14 @@ export default function Regis() {
     console.log("Password:", values.password);
     console.log("Confirm Password:", values.confirmPassword);
   }
-// terbaruu
-  const backgroundImages = [
-    "bg1.jpg",
-    "bg2.jpg",
-    "bg3.png",
-    "bg4.jpg",
-  ];
+  // terbaruu
+  const backgroundImages = ["bg1.jpg", "bg2.jpg", "bg3.png", "bg4.jpg"];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setBackgroundImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+      setBackgroundImageIndex(
+        (prevIndex) => (prevIndex + 1) % backgroundImages.length
+      );
     }, 5000);
 
     return () => clearInterval(interval);
@@ -39,14 +36,13 @@ export default function Regis() {
     return `/assets/background/${backgroundImages[index]}`;
   };
 
-
   return (
     <div
-    className="bg-no-repeat bg-center bg-cover w-screen h-screen filter-brightness-1 transition duration-1000 ease-in-out"
-    style={{
-      backgroundImage: `url(${getBackgroundImageUrl(backgroundImageIndex)})`,
-    }}
-  >
+      className="bg-no-repeat bg-center bg-cover w-screen h-screen filter-brightness-1 transition duration-1000 ease-in-out"
+      style={{
+        backgroundImage: `url(${getBackgroundImageUrl(backgroundImageIndex)})`,
+      }}
+    >
       <div className="container pt-5 md:pt-3 px-20 md:px-8">
         <section className="flex items-center md:justify-center">
           <img className="w-28 h-28" src="./assets/logo.png" alt="" />
@@ -77,18 +73,18 @@ export default function Regis() {
                   }
                   if (!values.password) {
                     errors.password = "Password is required";
-                  }
-                  else if (values.password.length <= 8) {
-                    errors.password = "Password must be at least 8 characters long";
+                  } else if (values.password.length <= 8) {
+                    errors.password =
+                      "Password must be at least 8 characters long";
                   }
 
                   if (!values.confirmPassword) {
                     errors.confirmPassword = "Confirm Password is required";
                   } else if (values.password !== values.confirmPassword) {
                     errors.confirmPassword = "Passwords do not match";
-                  }
-                  else if (values.confirmPassword.length <= 8) {
-                    errors.confirmPassword = "Password must be at least 8 characters long"
+                  } else if (values.confirmPassword.length <= 8) {
+                    errors.confirmPassword =
+                      "Password must be at least 8 characters long";
                   }
 
                   return errors;
@@ -120,7 +116,6 @@ export default function Regis() {
                       togglePassword={handleTogglePassword}
                     />
 
-
                     <AccordInput
                       type={showPassword ? "text" : "password"}
                       name="confirmPassword"
@@ -128,8 +123,8 @@ export default function Regis() {
                       text="Confirm Password"
                     />
                     <button type="button" onClick={handleTogglePassword}>
-                      {showPassword ? ( 
-                        <FontAwesomeIcon icon={faEyeSlash} /> 
+                      {showPassword ? (
+                        <FontAwesomeIcon icon={faEyeSlash} />
                       ) : (
                         <FontAwesomeIcon icon={faEye} />
                       )}

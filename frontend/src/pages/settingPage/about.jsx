@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Sidebar from "../../components/layouts/sidebar/sidebar";
 import NavigationBar from "../../components/layouts/navigationBar/navigationBar";
 import SidebarSetting from "../../components/layouts/sideSetting/sidebarSetting";
@@ -6,6 +6,9 @@ import HeaderSetting from "../../components/layouts/headerSetting/headerSetting"
 import Developer from "../../components/developers/developers";
 
 const AboutDev = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Mengatur posisi scroll ke bagian atas saat halaman dimuat
+  }, []);
   return (
     <React.Fragment>
       <Sidebar />

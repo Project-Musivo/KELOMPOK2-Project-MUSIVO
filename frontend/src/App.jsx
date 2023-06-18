@@ -6,11 +6,11 @@ import Favorit from "./pages/favorit";
 import Playlist from "./pages/playlist";
 import Login from "./pages/LogReg/Login";
 import Regis from "./pages/LogReg/Regis";
-import ProfileSetting from "./pages/settingPage/profilesetting";
 import About from "./pages/settingPage/about";
 import Leaderboard from "./pages/leaderboard";
 import Premium from "./pages/premium";
 import Artist from "./pages/artist";
+import ProfileSetting from "./pages/settingPage/profilesetting";
 
 // admin
 import Dasboardadmin from "./pages/admin/dasboardadmin";
@@ -27,7 +27,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/regis" element={<Regis />} />
         <Route path="/favorit" element={<Favorit />} />
-        <Route path="/profilesetting" element={<ProfileSetting />} />
+        <Route path="/profile" element={<ProfileSetting />} />
         <Route path="/playlist" element={<Playlist />} />
         <Route path="/about" element={<About />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
@@ -35,7 +35,7 @@ function App() {
         <Route path="/premium" element={<Premium />} />
 
         {/* admin */}
-        <Route path="/dashboard" element={<Dasboardadmin />} />
+        <Route path="/dashadmin" element={<Dasboardadmin />} />
         <Route path="/music" element={<Music />} />
         <Route path="/dataUser" element={<DataUser />} />
         <Route path="/setting" element={<Setting />} />
