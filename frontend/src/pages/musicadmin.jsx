@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import NavigationBaradmin from "../components/layouts/navigationBar/navigationBaradmin";
+import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebaradmin from "../components/layouts/sidebar/sidebaradmin";
+import Dasboardadmin from "./admin pages/dasboardadmin";
 
+const Music = () => {
 
-  const Music = () => {
     return (
         <React.Fragment>
-         <NavigationBaradmin />
+         <NavigationBar />
           <div>
           <Sidebaradmin />
             <div>
-
+              <Dasboardadmin/>
             </div>
         </div>
         </React.Fragment>

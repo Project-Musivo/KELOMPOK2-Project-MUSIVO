@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import NavigationBar from "../components/layouts/navigationBar/navigationBar";
-import Sidebar from "../components/layouts/sidebar/sidebaradmin";
 
+import Sidebar from "../components/layouts/sidebar/sidebaradmin";
+import Dasboardadmin from "./admin pages/dasboardadmin";
 
 const Home = () => {
 
@@ -12,9 +12,9 @@ const Home = () => {
     <React.Fragment>
       <Sidebar />
       <div>
-        <NavigationBar />
+     
        </div>
-    
+    <Dasboardadmin />
     </React.Fragment>
 
   );

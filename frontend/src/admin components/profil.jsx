@@ -6,7 +6,7 @@ import React, { useState } from "react";
       className="ms-[165px] " 
       >
      
-      <div style={{ position: "relative", width: "screen", height: "345px" }}>
+      <div style={{ position: "relative", width: "1110px", height: "345px" }}>
       <div
         style={{
           position: "absolute",

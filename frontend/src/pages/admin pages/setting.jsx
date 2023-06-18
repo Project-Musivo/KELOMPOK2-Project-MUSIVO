@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import NavigationBaradmin from "../components/layouts/navigationBar/navigationBaradmin";
-import Sidebaradmin from "../components/layouts/sidebar/sidebaradmin";
-
+import Sidebaradmin from "../../components/layouts/sidebar/sidebaradmin";
+import Navbar from "../../admin components/navbarsetting";
 
   const Setting = () => {
     return (
         <React.Fragment>
-         <NavigationBaradmin />
           <div>
           <Sidebaradmin />
             <div>
-
+            <Navbar />
             </div>
         </div>
         </React.Fragment>
