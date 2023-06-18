@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import NavigationBaradmin from "../components/layouts/navigationBar/navigationBaradmin";
-import Sidebaradmin from "../components/layouts/sidebar/sidebaradmin";
+import NavigationBaradmin from "../../components/layouts/navigationBar/navigationBaradmin";
+import Sidebaradmin from "../../components/layouts/sidebar/sidebaradmin";
 
 
   const DataUser = () => {

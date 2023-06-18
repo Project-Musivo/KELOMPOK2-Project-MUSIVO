@@ -26,12 +26,10 @@ module.exports = withMT({
     },
     colors: {
       "transparent-black": "rgba(25, 25, 25, 0.297)",
-      '14': "#141414",
-      'card' : "#1a1b1a"
-    },
-
-    fontFamily: {
-      poppins: ["Poppins", "sans-serif"],
+      14: "#141414",
+      card: "#1a1b1a",
+      card2: "rgba(255, 255, 255, 0.193)",
+      card3: "rgb(34, 34, 34)",
     },
   },
 
