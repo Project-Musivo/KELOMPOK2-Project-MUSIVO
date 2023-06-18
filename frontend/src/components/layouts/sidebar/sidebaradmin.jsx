@@ -6,11 +6,11 @@ const Sidebar = () => {
 
   const [selectedMenu, setSelectedMenu] = useState(null);
   const Menus = [
-    { title: "Home", src: "home", path: "/" },
-    { title: "Playlist", src: "playlist", path: "/playlist" },
-    { title: "Artisc ", src: "user", path: "/artisc" },
-    { title: "Favorit", src: "favorit", path: "/favorit" },
-    { title: "Leaderboard", src: "trophy", path: "/leaderboard" },
+    { title: "Dasboard", src: "dashboard", path: "/" },
+    { title: "Music", src: "file music", path: "/musicadmin" },
+    { title: "Data User ", src: "users", path: "/datauseradmin" },
+    { title: "Setting", src: "settings", path: "/settingadmin" },
+    { title: "Log Out", src: "logout icon", path: "/login" },
     // { title: "Settings ", src: "setting", path: "/settings" },
     // { title: "Logout", src: "logout", gap: true },
   ];
@@ -54,7 +54,7 @@ const Sidebar = () => {
               ${open && `hover:text-slate-100 hover:bg-gray-500`}
               `}
               >
-                <img src={`./assets/icon/${Menu.src}.svg`} />
+                <img src={`./assets/icon/icon admin/${Menu.src}.svg`} />
                 <span
                   className={`${
                     open ? "" : "scale-0"
@@ -71,7 +71,7 @@ const Sidebar = () => {
             open ? "left-[125px]" : "left-6"
           }`}
         >
-          1.0.0
+         2.0.0
         </p>
       </div>
     </div>
