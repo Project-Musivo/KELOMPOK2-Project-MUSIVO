@@ -18,13 +18,12 @@ import Music from "./pages/admin pages/musicadmin";
 import DataUser from "./pages/admin pages/datauseradmin";
 import Setting from "./pages/admin pages/settingadmin";
 
-
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* User */}
-        <Route path="/" element={<Home />} />
+        {/* user */}
+        <Route path="/" element={<Home />} /> 
         <Route path="/login" element={<Login />} />
         <Route path="/regis" element={<Regis />} />
         <Route path="/favorit" element={<Favorit />} />
@@ -34,6 +33,7 @@ function App() {
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/artist" element={<Artist />} />
         <Route path="/premium" element={<Premium />} />
+
         {/* admin */}
         <Route path="/dashadmin" element={<DashAdmin />} />
         <Route path="/music" element={<Music />} />
