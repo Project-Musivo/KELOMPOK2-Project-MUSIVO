@@ -11,7 +11,7 @@ import Leaderboard from "./pages/leaderboard";
 import Premium from "./pages/premium";
 import Artist from "./pages/artist";
 import ProfileSetting from "./pages/settingPage/profilesetting";
-import AccountSet from "./pages/settingPage/account";
+import NotifSet from "./pages/settingPage/notification";
 
 // admin
 import DashAdmin from "./pages/admin pages/dasboardadmin";
@@ -35,7 +35,7 @@ function App() {
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/artist" element={<Artist />} />
         <Route path="/premium" element={<Premium />} />
-        <Route path="/accountSet" element={<AccountSet />} />
+        <Route path="/notifSet" element={<NotifSet />} />
         
         {/* admin */}
         <Route path="/dashadmin" element={<DashAdmin />} />

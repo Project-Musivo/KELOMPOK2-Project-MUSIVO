@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 
-export default function SetAccAccord({ title, subtitle }) {
+export default function NotifAccAccord({ title, subtitle }) {
   const [isToggled, setIsToggled] = useState(false);
 
   const toggleButtonClasses = classNames(
@@ -42,8 +42,8 @@ export default function SetAccAccord({ title, subtitle }) {
           <div className="w-14 h-8 bg-gray-400 rounded-full"></div>
           <div
             className={classNames('dot absolute left-1 top-1 rounded-full transition', {
-              'bg-white w-6 h-6 transform translate-x-0': !isToggled,
-              'bg-blue-500 w-6 h-6 transform translate-x-6': isToggled,
+              'bg-gray-800 w-6 h-6 transform translate-x-0': !isToggled,
+              'bg-green-700 w-6 h-6 transform translate-x-6': isToggled,
             })}
           ></div>
         </label>
