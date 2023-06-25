@@ -3,6 +3,7 @@ import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
 import Listfav from "../components/listFav/listfav";
 import Headerfavorit from "../components/headerfavorit/headerfavorit";
+import Footer from "../components/layouts/footer/footer";
 
 // import Headermusic from "../components/headermusic/header";
 // import TableList from "../components/tableList/tableList";
@@ -29,9 +30,10 @@ const Favorit = () => {
           }}
         >
           <Headerfavorit />
-          <div className="ps-[80px] pe-[10px]">
+          <div className="bg-transparent-black h-[800px] ps-[100px] pe-[30px]">
             <Listfav />
           </div>
+        <Footer/>
         </div>
       </div>
     </React.Fragment>

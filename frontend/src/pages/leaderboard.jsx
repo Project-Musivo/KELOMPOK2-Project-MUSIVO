@@ -20,7 +20,8 @@ const Leaderboard = () => {
   const [activeTab, setActiveTab] = React.useState("html");
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Mengatur posisi scroll ke bagian atas saat halaman dimuat
+    window.scrollTo(0, 0);
+    setActiveTab(data[0].value); // Mengatur posisi scroll ke bagian atas saat halaman dimuat
   }, []);
   return (
     <React.Fragment>
