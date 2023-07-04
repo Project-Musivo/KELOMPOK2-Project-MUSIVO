@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Input } from "@material-tailwind/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import ProfileMenu from "./profileMenu";
+import Toogle_notif from "../../notification/toogle_notif";
 
 const NavigationBar = () => {
   const [bellImg, setBellImg] = useState("./assets/icon/bell2.png");
@@ -33,7 +34,8 @@ const NavigationBar = () => {
         <div className="ms-auto border-e-2 pe-2 me-5">
           <ProfileMenu />
         </div>
-        <img src={bellImg} alt="" width={20} />
+        {/* <img src={bellImg} alt="" width={20} /> */}
+        <Toogle_notif/>
       </div>
     </nav>
   );

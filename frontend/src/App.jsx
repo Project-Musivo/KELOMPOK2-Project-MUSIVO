@@ -17,6 +17,7 @@ import DashAdmin from "./pages/admin pages/dasboardadmin";
 import Music from "./pages/admin pages/musicadmin";
 import DataUser from "./pages/admin pages/datauseradmin";
 import Setting from "./pages/admin pages/settingadmin";
+import Toogle_notif from "./components/notification/toogle_notif";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/artist" element={<Artist />} />
         <Route path="/premium" element={<Premium />} />
+        <Route path="/notif" element={<Toogle_notif />} />
         {/* admin */}
         <Route path="/dashadmin" element={<DashAdmin />} />
         <Route path="/music" element={<Music />} />
