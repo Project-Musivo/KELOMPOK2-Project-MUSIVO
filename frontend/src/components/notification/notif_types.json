@@ -1,0 +1,8 @@
+{
+    "reaction" : "reacted to your recent post",
+    "follow" : "followed you",
+    "join_group" : "has joined your group",
+    "left_group" : "left the group",
+    "comment" : "commented on your picture",
+    "message": "sent you a private message"
+}

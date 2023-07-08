@@ -14,7 +14,7 @@ import ContentSwiper from "./contentSwiper";
 
 const Genre = () => {
   return (
-    <div className="genre mt-[50px] ">
+    <div className="genre mt-[30px] mb-5 pe-[60px] ps-[30px]">
       <Swiper
         slidesPerView={3}
         spaceBetween={50}
@@ -41,6 +41,18 @@ const Genre = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ContentSwiper img="./assets/album music/reggae.jpg" genre="Reggae" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ContentSwiper
+            img="./assets/album music/hiphop.jpg"
+            genre="Hip Hop"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ContentSwiper
+            img="./assets/album music/hiphop.jpg"
+            genre="Hip Hop"
+          />
         </SwiperSlide>
         <SwiperSlide>
           <ContentSwiper

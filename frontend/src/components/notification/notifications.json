@@ -1,0 +1,67 @@
+[
+    {
+        "id" : 0,
+        "avatarURL" : "./images/avatar-mark-webber.webp",
+        "name" : "Mark Webber",
+        "type" : "reaction",
+        "additional" : "My first tournament today!",
+        "time" : "1m ago",
+        "unread" : true
+    },
+    {
+        "id" : 1,
+        "avatarURL" : "./images/avatar-angela-gray.webp",
+        "name" : "Angela Gray",
+        "type" : "follow",
+        "additional" : "",
+        "time" : "5m ago",
+        "unread" : true
+    },
+    {
+        "id" : 2,
+        "avatarURL" : "./images/avatar-jacob-thompson.webp",
+        "name" : "Jacob Thompson",
+        "type" : "join_group",
+        "additional" : "Chess Club",
+        "time" : "1 day ago",
+        "unread" : true
+    },
+    {
+        "id" : 3,
+        "avatarURL" : "./images/avatar-rizky-hasanuddin.webp",
+        "name" : "Rizky Hasanuddin",
+        "type" : "message",
+        "message" : "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+        "additional" : null,
+        "time" : "5 days ago",
+        "unread" : false
+    },
+    {
+        "id" : 4,
+        "avatarURL" : "./images/avatar-kimberly-smith.webp",
+        "name" : "Kimberly Smith",
+        "type" : "comment",
+        "additional" : null,
+        "reactionURL" : "./images/image-chess.webp",
+        "time" : "1 week ago",
+        "unread" : false
+    },
+    {
+        "id" : 5,
+        "avatarURL" : "./images/avatar-nathan-peterson.webp",
+        "name" : "Nathan Peterson",
+        "type" : "reaction",
+        "additional" : "5 end-game strategies to increase your win rate",
+        "time" : "2 weeks ago",
+        "unread" : false
+    },
+    {
+        "id" : 6,
+        "avatarURL" : "./images/avatar-anna-kim.webp",
+        "name" : "Anna Kim",
+        "type" : "left_group",
+        "additional" : "Chess Club",
+        "time" : "2 weeks ago",
+        "unread" : false
+    }
+]

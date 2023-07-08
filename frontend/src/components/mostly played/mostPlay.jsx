@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { dataMostPlay } from "../../data/music";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const MostlyPlayed = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -9,20 +10,26 @@ const MostlyPlayed = () => {
   };
 
   console.log({ data: dataMostPlay.map((x) => x.id) });
+  const navigate = useNavigate();
 
   return (
-    <div className="mostlyplayed flex justify-start gap-3 flex-wrap w-100 h-45">
+    <div className="mostlyplayed flex justify-center gap-3 flex-wrap w-100 h-45">
       {dataMostPlay.map((music, index) => {
         const isPlaying = activeIndex === index;
         return (
           <div
-            className="boxPlay bg-white text-[#000] py-3 w-[325px] flex items-center justify-evenly flex-wrap rounded-[5px]"
+            className="boxPlay bg-white border text-[#000] py-3 w-[400px] flex items-center  flex-wrap rounded-[5px]"
             key={index.id}
           >
-            <span className="font-extrabold">{music.id}</span>
-            <img src={music.image} alt="" className="w-[80px]" />
-            <div className="title" style={{ marginLeft: "-10px" }}>
-              <h3>{music.title}</h3>
+            <span className="font-extrabold w-3 mx-3">{music.id}</span>
+            <img
+              src={music.image}
+              alt=""
+              className="w-[80px] me-3 rounded-lg"
+              onClick={() => navigate("/lyrics")}
+            />
+            <div className="title -ms-1">
+              <h3 className="w-[150px]">{music.title}</h3>
               <p className="text-[15px] opacity-50">{music.artits}</p>
             </div>
 
@@ -33,14 +40,16 @@ const MostlyPlayed = () => {
                   : "./assets/icon/start.png"
               }
               alt=""
-              className="cursor-pointer"
+              className="cursor-pointer ms-auto me-[30px] "
               onClick={() => togglePlay(index)}
             />
-            <img
-              src="./assets/icon/detail.png"
-              alt=""
-              className="cursor-pointer"
-            />
+            <a href="/lyrics">
+              <img
+                src="./assets/icon/detail.png"
+                alt=""
+                className="cursor-pointer ms-auto me-6"
+              />
+            </a>
           </div>
         );
       })}

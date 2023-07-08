@@ -1,7 +1,7 @@
 import React from "react";
-import { dataPlaylist } from "../../data/music";
+import { dataMusic } from "../../data/music";
 
-const TableList = () => {
+const TableListImg = () => {
     return(
         <div className="w-full overflow-hidden rounded-lg shadow-xs">
         <div className="w-full overflow-x-auto">
@@ -14,13 +14,13 @@ const TableList = () => {
                 <th className="px-4 py-3 text-center">TIME</th>
               </tr>
             </thead>
-              {dataPlaylist.map((dataPlaylist) => (
+              {dataMusic.map((dataMusic) => (
             <tbody className="bg-transparent">
                 <tr className="text-[15px]  tracking-wide text-white border-0 bg-transparent">
-                <td className="px-4 py-3 text-center" >{dataPlaylist.id}</td>
-                <td className="px-4 py-3 text-center">{dataPlaylist.title}</td>
-                <td className="px-4 py-3 text-center">{dataPlaylist.artis}</td>
-                <td className="px-4 py-3 text-center">{dataPlaylist.time}</td>
+                <td className="px-4 py-3 text-center" >{dataMusic.id}</td>
+                <td className="px-4 py-3 text-center flex items-center"><img src={dataMusic.img} className="w-10 mr-2"/>{dataMusic.title}</td>
+                <td className="px-4 py-3 text-center">{dataMusic.artis}</td>
+                <td className="px-4 py-3 text-center">{dataMusic.time}</td>
               </tr>
             </tbody>
                 ))}
@@ -29,4 +29,4 @@ const TableList = () => {
       </div>
     )
 }
-export default TableList;
+export default TableListImg;
