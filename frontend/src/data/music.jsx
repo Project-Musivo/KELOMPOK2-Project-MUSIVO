@@ -28,27 +28,39 @@ const dataMusic = [
 const dataMostPlay = [
   {
     id: 1,
-    title: "Anggurman",
-    artits: "Jason Ranti",
-    image: "./assets/album music/anggurman.png",
+    title: "Nonsense",
+    artits: "Sabrina Carpenter",
+    image: "./assets/album music/nonsense.jpg",
   },
   {
     id: 2,
-    title: "Anggurman",
-    artits: "Jason Ranti",
-    image: "./assets/album music/anggurman.png",
+    title: "Cruel Summer",
+    artits: "Tailor Swift",
+    image: "./assets/album music/cruelsummer.jpg",
   },
   {
     id: 3,
-    title: "Anggurman",
-    artits: "Jason Ranti",
-    image: "./assets/album music/anggurman.png",
+    title: "Angels Like You",
+    artits: "Miley Cyrus",
+    image: "./assets/album music/angelikeu.jpg",
   },
   {
     id: 4,
-    title: "Anggurman",
-    artits: "Jason Ranti",
-    image: "./assets/album music/anggurman.png",
+    title: "Moonlight",
+    artits: "Kali Uchis",
+    image: "./assets/album music/moonlight.jpg",
+  },
+  {
+    id: 5,
+    title: "Metamorphosis",
+    artits: "Interworld",
+    image: "./assets/album music/metamorphosis.jpg",
+  },
+  {
+    id: 6,
+    title: "Cupid",
+    artits: "Fifty Fifty",
+    image: "./assets/album music/cupid.jpg",
   },
 ];
 

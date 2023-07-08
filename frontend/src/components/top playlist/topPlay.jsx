@@ -2,7 +2,7 @@ import { dataTopPlay } from "../../data/music";
 
 const TopPlaylist = () => {
   return (
-    <div className="topPlay">
+    <div className="topPlay flex flex-col items-center">
       {dataTopPlay.map((music, index) => (
         <div
           className="boxTop flex items-center justify-evenly flex-wrap bg-white text-[#000] py-3 w-[400px]  pe-3 rounded-md mb-4"
