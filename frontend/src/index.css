@@ -9,3 +9,132 @@ body {
   color: #fff;
 }
 
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  border-radius: 0.625rem;
+  background-color: white;
+  gap: 1.25rem;
+  padding: 2.5rem 1.25rem;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.unread-count {
+  padding: 0.125rem 0.625rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.313rem;
+  background-color: hsl(219, 85%, 26%);
+  text-align: center;
+  color: white;
+}
+
+.notifications-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.notification-container {
+  padding: 0.625rem;
+  border-radius: 0.313rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+
+.avatar, .reaction-picture {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.reaction-picture {
+  margin-left: auto;
+}
+
+.reaction-picture:hover {
+  cursor: pointer;
+}
+
+.notif-icon {
+  display: inline-block;
+  vertical-align:10%;;
+  border-radius: 0.625rem;
+  height: 7px;
+  width: 7px;
+  background-color: red;
+}
+
+.name {
+  font-weight: 800;
+}
+
+.type {
+  color: hsl(219, 12%, 42%);
+}
+
+.additional {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+}
+
+.group-text {
+  color: hsl(219, 85%, 26%)
+}
+
+.name:hover, .additional:hover, .group-text:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%)
+}
+
+.notification-time {
+  margin-block: 0.313rem;
+  font-size: 0.8rem;
+  color: hsl(219, 12%, 42%);
+}
+
+.unread {
+  background-color:  hsl(210, 60%, 98%);
+}
+
+.message-container {
+  padding: 0.625rem;;
+  border: solid 1px hsl(211, 68%, 94%);
+  border-radius: 0.313rem;
+  color: hsl(219, 12%, 42%);
+}
+
+.message-container:hover {
+  cursor: pointer;
+  background-color: hsl(211, 68%, 94%)
+}
+
+.read-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: hsl(219, 12%, 42%);
+}
+
+.read-btn:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+

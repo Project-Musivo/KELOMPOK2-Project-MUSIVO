@@ -30,7 +30,9 @@ const Headerfavorit = () => {
                 backgroudnSize: "cover",
               }}
               onClick={() => togglePlay()}
-            ></span>
+            >
+              
+            </span>
             <div className=" mt-5   ">
               <img src="./assets/icon/detail-white.png" alt="" />
             </div>
