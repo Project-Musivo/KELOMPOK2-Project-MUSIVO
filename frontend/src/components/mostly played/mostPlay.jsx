@@ -36,11 +36,13 @@ const MostlyPlayed = () => {
               className="cursor-pointer ms-auto -me-[30px] "
               onClick={() => togglePlay(index)}
             />
+            <a href="/lyrics">
             <img
               src="./assets/icon/detail.png"
               alt=""
               className="cursor-pointer ms-auto me-6"
             />
+            </a>
           </div>
         );
       })}
