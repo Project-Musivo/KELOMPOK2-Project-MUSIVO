@@ -11,6 +11,7 @@ import Leaderboard from "./pages/leaderboard";
 import Premium from "./pages/premium";
 import Artist from "./pages/artist";
 import ProfileSetting from "./pages/settingPage/profilesetting";
+// import Comentar from "./components/coment/comentar";
 
 // admin
 import DashAdmin from "./pages/admin pages/dasboardadmin";
@@ -18,14 +19,13 @@ import Music from "./pages/admin pages/musicadmin";
 import DataUser from "./pages/admin pages/datauseradmin";
 import Setting from "./pages/admin pages/settingadmin";
 
-
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         {/* User */}
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/" element={<Comentar />} /> */}
+        <Route path="/" element={<Login />} />
         <Route path="/regis" element={<Regis />} />
         <Route path="/favorit" element={<Favorit />} />
         <Route path="/profile" element={<ProfileSetting />} />
