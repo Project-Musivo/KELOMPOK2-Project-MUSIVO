@@ -13,12 +13,7 @@ import About from "./pages/settingPage/about";
 import Premium from "./pages/premium";
 import Artist from "./pages/artist";
 import ProfileSetting from "./pages/settingPage/profilesetting";
-<<<<<<< HEAD
 // import Comentar from "./components/coment/comentar";
-=======
-import NotifSet from "./pages/settingPage/notification";
-import Toogle_notif from "./components/notification/toogle_notif";
->>>>>>> Narendi
 
 // admin
 import DashAdmin from "./pages/admin pages/dasboardadmin";
