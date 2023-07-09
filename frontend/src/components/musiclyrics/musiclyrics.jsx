@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { dataSongLyrics } from "../../data/music";
 
 const Headerfavorit = () => {
   const [active, setActive] = useState(false);
@@ -7,17 +8,27 @@ const Headerfavorit = () => {
     setActive(!active);
   };
 
+  const songData = dataSongLyrics.find((song) => song.id === 1);
+
   return (
     <div className=" w-full  ps-[150px] py-[30px]">
       <div className="flex items-center">
         <img
-          src="https://t.scdn.co/images/3099b3803ad9496896c43f22fe9be8c4.png" 
+          src={songData.image}
           alt=""
           style={{ boxShadow: "0px 0px 50px rgba(255, 255, 255, 0.3)" }}
         />
         <div className="flex flex-col ms-10">
-          <h3 className="text-[85px] font-extrabold">Liked Songs</h3>
-          <p className="opacity-70">Nanaa, 04 songs</p>
+          <h3 className="text-[85px] font-extrabold">{songData.title}</h3>
+          <p>
+            <img
+                src={songData.miniImg}
+                alt="img"
+                className="inline-block w-8 h-8 mr-2"
+                />
+                <span className="font-bold">{songData.artis}</span> {songData.year}
+          </p>
+
           <div className="flex items-center mt-5 justify-between w-[120px]">
             <span
               className="p-5 bg-white w-[50px] h-[50px] rounded-full cursor-pointer "
@@ -30,10 +41,8 @@ const Headerfavorit = () => {
                 backgroudnSize: "cover",
               }}
               onClick={() => togglePlay()}
-            >
-              
-            </span>
-            <div className=" mt-5   ">
+            ></span>
+            <div className="toogle">
               <img src="./assets/icon/detail-white.png" alt="" />
             </div>
           </div>

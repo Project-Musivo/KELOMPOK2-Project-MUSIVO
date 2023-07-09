@@ -1,20 +1,22 @@
 import React from "react";
 import { useField } from "formik";
+import { Input } from "@material-tailwind/react";
 
-const AccordInput = ({ type, name, placeholder, text }) => {
+const AccordInput = ({ type, name, placeholder }) => {
   const [field, meta] = useField(name);
 
   return (
     <div>
-      <label className="text-white text-sm">{text}</label>
       <div>
-        <input
+        <Input
+          variant="outlined"
+          label={placeholder}
           type={type}
-          placeholder={placeholder}
-          className={`px-3 py-1 w-full bg-transparent rounded-md ${
+          className={`px-3 py-1 w-full rounded-md ${
             meta.touched && meta.error ? "border-red-500" : ""
           }`}
           {...field}
+          labelProps={{ className: "text-sm" }}
         />
         {meta.touched && meta.error && (
           <div className="text-red-500 text-xs">{meta.error}</div>
