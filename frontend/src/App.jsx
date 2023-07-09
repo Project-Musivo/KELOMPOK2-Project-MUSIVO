@@ -27,7 +27,7 @@ function App() {
       <Routes>
         {/* User */}
         {/* <Route path="/" element={<Comentar />} /> */}
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Home />} />
         <Route path="/regis" element={<Regis />} />
         <Route path="/favorit" element={<Favorit />} />
         <Route path="/playlist" element={<Playlist />} />
