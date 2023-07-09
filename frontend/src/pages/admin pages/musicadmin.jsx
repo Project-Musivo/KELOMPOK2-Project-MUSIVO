@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import Sidebaradmin from "../../components/layouts/sidebar/sidebaradmin";
 import Navbar from "../../admin components/navbarmusic";
+import TableMusic from "../../admin components/tablemusic";
 
-  const Music = () => {
-    return (
-        <React.Fragment>
-          <div>
-          <Sidebaradmin />
-            <div>
-            <Navbar />
-            </div>
+const Music = () => {
+  return (
+    <React.Fragment>
+      <div>
+        <Sidebaradmin />
+        <div>
+          <Navbar />
         </div>
-        </React.Fragment>
-      );
-    };
+        <br /> <br /> <br />
+        <TableMusic />
+      </div>
+    </React.Fragment>
+  );
+};
 export default Music;
