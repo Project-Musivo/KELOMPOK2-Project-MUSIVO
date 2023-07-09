@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import { dataSongLyrics } from "../../data/music";
 
 const Headerfavorit = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Mengatur posisi scroll ke bagian atas saat halaman dimuat
+  }, []);
+
   const [active, setActive] = useState(false);
 
   const togglePlay = () => {

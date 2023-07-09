@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import NavigationBar from "../components/layouts/navigationBar/navigationBar";
 import Sidebar from "../components/layouts/sidebar/sidebar";
+import Footer from "../components/layouts/footer/footer";
 import Genre from "../components/genreMusic/genre";
 import MostlyPlayed from "../components/mostly played/mostPlay";
 import TopPlaylist from "../components/top playlist/topPlay";
-import Footer from "../components/layouts/footer/footer";
 
 const Home = () => {
   useEffect(() => {
@@ -37,6 +37,55 @@ const Home = () => {
                 Top Playlist
               </h2>
               <TopPlaylist />
+            </div>
+          </div>
+          <div className="ms-[10px]">
+            <div className="ucapan mt-[40px] ps-[10px]">
+              <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
+                Made For U
+              </h2>
+            </div>
+          </div>
+          <div className="ms-[10px]">
+            <div className="ucapan mt-[40px] ps-[10px]">
+              <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
+                Based on Your recent Listening
+              </h2>
+            </div>
+          </div>
+          <div className="ms-[10px]">
+            <div className="ucapan mt-[40px] ps-[10px]">
+              <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
+                Today's Biggest Hits
+              </h2>
+            </div>
+          </div>
+          <div className="ms-[10px]">
+            <div className="ucapan mt-[40px] ps-[10px]">
+              <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
+                Recomended For Today
+              </h2>
+            </div>
+          </div>
+          <div className="ms-[10px]">
+            <div className="ucapan mt-[40px] ps-[10px]">
+              <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
+                Suggested Artists
+              </h2>
+            </div>
+          </div>
+          <div className="ms-[10px]">
+            <div className="ucapan mt-[40px] ps-[10px]">
+              <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
+                Popular Albums
+              </h2>
+            </div>
+          </div>
+          <div className="ms-[10px]">
+            <div className="ucapan mt-[40px] ps-[10px]">
+              <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
+                Fresh New Music
+              </h2>
             </div>
           </div>
         </div>

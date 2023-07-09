@@ -13,6 +13,8 @@ import About from "./pages/settingPage/about";
 import Premium from "./pages/premium";
 import Artist from "./pages/artist";
 import ProfileSetting from "./pages/settingPage/profilesetting";
+import Browse from "./pages/browse";
+
 
 // admin
 import DashAdmin from "./pages/admin pages/dasboardadmin";
@@ -41,6 +43,7 @@ function App() {
         <Route path="/artist" element={<Artist />} />
         <Route path="/premium" element={<Premium />} />
         <Route path="/notif" element={<Toogle_notif />} />
+        <Route path="/browse" element={<Browse />} />
         {/* admin */}
         <Route path="/dashadmin" element={<DashAdmin />} />
         <Route path="/music" element={<Music />} />
