@@ -14,24 +14,23 @@ import Premium from "./pages/premium";
 import Artist from "./pages/artist";
 import ProfileSetting from "./pages/settingPage/profilesetting";
 import Browse from "./pages/browse";
-
+import NotifSet from "./pages/settingPage/notification";
+import Toogle_notif from "./components/notification/toogle_notif";
 
 // admin
 import DashAdmin from "./pages/admin pages/dasboardadmin";
 import Music from "./pages/admin pages/musicadmin";
 import DataUser from "./pages/admin pages/datauseradmin";
 import Setting from "./pages/admin pages/settingadmin";
-import Toogle_notif from "./components/notification/toogle_notif";
-
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         {/* User */}
+        {/* <Route path="/" element={<Comentar />} /> */}
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/regis" element={<Regis />} />
         <Route path="/favorit" element={<Favorit />} />
         <Route path="/playlist" element={<Playlist />} />
         <Route path="/regis" element={<Regis />} />
@@ -43,12 +42,14 @@ function App() {
         <Route path="/artist" element={<Artist />} />
         <Route path="/premium" element={<Premium />} />
         <Route path="/notif" element={<Toogle_notif />} />
+        <Route path="/notifset" element={<NotifSet />} />
         <Route path="/browse" element={<Browse />} />
         {/* admin */}
         <Route path="/dashadmin" element={<DashAdmin />} />
         <Route path="/music" element={<Music />} />
         <Route path="/dataUser" element={<DataUser />} />
         <Route path="/setting" element={<Setting />} />
+          
       </Routes>
     </BrowserRouter>
   );
