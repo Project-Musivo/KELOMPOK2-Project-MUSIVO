@@ -14,7 +14,7 @@ const Toogle_notif = () => {
     const [openPopover, setOpenPopover] = React.useState(false);
     const triggers = {
       onMouseEnter: () => setOpenPopover(true),
-      onMouseLeave: () => setOpenPopover(true),
+      onMouseLeave: () => setOpenPopover(false),
     };
 
     const [notifs, setNotifs] = useState(Notif);

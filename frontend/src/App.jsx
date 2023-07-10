@@ -13,6 +13,8 @@ import About from "./pages/settingPage/about";
 import Premium from "./pages/premium";
 import Artist from "./pages/artist";
 import ProfileSetting from "./pages/settingPage/profilesetting";
+import Toogle_notif from "./components/notification/toogle_notif";
+import NotifSet from "./pages/settingPage/notification";
 // import Comentar from "./components/coment/comentar";
 
 // admin
