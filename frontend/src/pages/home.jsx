@@ -5,6 +5,10 @@ import Footer from "../components/layouts/footer/footer";
 import Genre from "../components/genreMusic/genre";
 import MostlyPlayed from "../components/mostly played/mostPlay";
 import TopPlaylist from "../components/top playlist/topPlay";
+import Mfu from "../components/contenthome/madeForU/mfu";
+import Byrl from "../components/contenthome/basedUrRecentListening/byrl";
+import Greeting from "../components/greeting/greeting";
+
 
 const Home = () => {
   useEffect(() => {
@@ -18,11 +22,7 @@ const Home = () => {
         <NavigationBar />
         <div className="home ps-[100px] mt-[100px] mb-20">
           <div className="ms-[30px]">
-            <div className="ucapan mt-[40px]  ps-[10px]">
-              <h3 className="text-[33px] font-semibold">
-                Good Morning, Nanaa!
-              </h3>
-            </div>
+            <Greeting />
             <Genre />
           </div>
           <div className="flex">
@@ -44,6 +44,7 @@ const Home = () => {
               <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
                 Made For U
               </h2>
+              <Mfu />
             </div>
           </div>
           <div className="ms-[10px]">
@@ -51,6 +52,7 @@ const Home = () => {
               <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
                 Based on Your recent Listening
               </h2>
+              <Byrl />
             </div>
           </div>
           <div className="ms-[10px]">
@@ -58,6 +60,7 @@ const Home = () => {
               <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
                 Today's Biggest Hits
               </h2>
+              <Mfu />
             </div>
           </div>
           <div className="ms-[10px]">
@@ -65,6 +68,7 @@ const Home = () => {
               <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
                 Recomended For Today
               </h2>
+              <Byrl />
             </div>
           </div>
           <div className="ms-[10px]">
@@ -72,6 +76,7 @@ const Home = () => {
               <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
                 Suggested Artists
               </h2>
+              <Mfu />
             </div>
           </div>
           <div className="ms-[10px]">
@@ -79,6 +84,7 @@ const Home = () => {
               <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
                 Popular Albums
               </h2>
+              <Byrl />
             </div>
           </div>
           <div className="ms-[10px]">
@@ -86,6 +92,7 @@ const Home = () => {
               <h2 className="text-[27px] mt-[30px] mb-6 font-bold ms-3 border-l-8 border-deep-orange-900 ps-3">
                 Fresh New Music
               </h2>
+              <Mfu />
             </div>
           </div>
         </div>
