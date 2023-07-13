@@ -10,7 +10,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       genre: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       idMusic: {
         type: Sequelize.INTEGER

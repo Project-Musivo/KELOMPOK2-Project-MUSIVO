@@ -27,7 +27,7 @@ exports.getGenreById = async (req, res) => {
     const genre = await Genre.findOne({
       where: {
         id: req.params.id,
-      },
+      },o
     });
 
     res.status(200).json(genre);

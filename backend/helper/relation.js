@@ -3,5 +3,6 @@ const { DataTypes } = require("sequelize");
 
 // models
 const Genre = require("../models/genre")(sequelize, DataTypes);
+const User = require("../models/user.js")(sequelize, DataTypes);
 
-module.exports = { Genre };
+module.exports = { Genre , User};
