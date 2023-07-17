@@ -5,7 +5,7 @@ const {
   getGenreById,
   deleteGenre,
   updateGenre,
-} = require("../controllers/genre");
+} = require("../controllers/genre.js");
 
 const route = express.Router();
 

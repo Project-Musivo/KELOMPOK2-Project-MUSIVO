@@ -79,6 +79,13 @@ module.exports = (sequelize, DataTypes) => {
           notEmpty: false,
         },
       },
+      user_token: {
+        type: DataTypes.STRING,
+        allowNull: true,
+        validate: {
+          notEmpty: false,
+        },
+      },
       userPlaylist: {
         type: DataTypes.STRING,
         allowNull: true,

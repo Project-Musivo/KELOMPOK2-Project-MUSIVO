@@ -37,6 +37,9 @@ module.exports = {
       url: {
         type: Sequelize.STRING,
       },
+      user_token: {
+        type: Sequelize.STRING,
+      },
       userPlaylist: {
         type: Sequelize.INTEGER,
       },
@@ -55,3 +58,4 @@ module.exports = {
   }
 };
 
+// table yang dibuat pada database mengacu pada schema file yang ada folder migrations
