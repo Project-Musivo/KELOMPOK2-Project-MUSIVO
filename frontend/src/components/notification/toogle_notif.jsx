@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Notification from "./notification";
+import Notification from "./Notification";
 import Notif_types from "./notif_types.json";
 import Notif from "./notifications.json";
 import {
